@@ -34,21 +34,18 @@
     <link href="https://doubleyue.life/2022/05/09/test/"/>
     <id>https://doubleyue.life/2022/05/09/test/</id>
     <published>2022-05-08T16:40:17.000Z</published>
-    <updated>2022-05-10T04:53:55.345Z</updated>
+    <updated>2022-05-10T05:33:08.994Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="第一次用hexo写博客">第一次用hexo写博客</h2><pre><code>mermaidgraph TD;  A--&gt;B;  A--&gt;C;  B--&gt;D;  C--&gt;D;</code></pre><p><span class="math display">\[\begin{equation}\left\{\begin{array}{lr}x=\dfrac{3\pi}{2}(1+2t)\cos(\dfrac{3\pi}{2}(1+2t)), &amp; \\y=s, &amp; 0 \leq s \leq L,|t| \leq1. \\z=\dfrac{3\pi}{2}(1+2t)\sin(\dfrac{3\pi}{2}(1+2t)), &amp;  \end{array}\right.\end{equation}\]</span></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="第一次用hexo写博客">第一次用hexo写博客</h2><p><span class="math display">\[\begin{equation}\left\{\begin{array}{lr}x=\dfrac{3\pi}{2}(1+2t)\cos(\dfrac{3\pi}{2}(1+2t)), &amp; \\y=s, &amp; 0 \leq s \leq L,|t| \leq1. \\z=\dfrac{3\pi}{2}(1+2t)\sin(\dfrac{3\pi}{2}(1+2t)), &amp;  \end{array}\right.\end{equation}\]</span></p><pre class="mermaid">graph TD;    A--&gt;B;    A--&gt;C;    B--&gt;D;    C--&gt;D;</pre>]]></content>
     
     
       
       
     <summary type="html">&lt;h2 id=&quot;第一次用hexo写博客&quot;&gt;第一次用hexo写博客&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;mermaid
-graph TD;
-  A--&amp;gt;B;
-  A--&amp;gt;C;
-  B--&amp;gt;D;
-  C--&amp;gt;D;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;span cla</summary>
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[\begin{equation}
+\left\{
+\begin{array}{lr}
+x=\dfrac{3\pi}{2}(1+2t)\cos</summary>
       
     
     
