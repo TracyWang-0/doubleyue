@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>个人博客hexo+github配置过程</title>
+      <link href="/2022/05/10/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo-github%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/"/>
+      <url>/2022/05/10/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo-github%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<h2 id="通过hexogithub配置个人博客的过程">通过hexo+github配置个人博客的过程</h2><ol type="1"><li>购买域名并设置</li><li>安装git</li><li>创建GitHub仓库</li><li>在仓库创建pages页面，并修改域名</li><li>关联仓库和本地主机</li><li>安装hexo</li><li>初始化本地博客目录</li><li>生成并在本地测试</li><li>部署到GitHub仓库并打开域名查看 -- 反应很慢</li><li>找个自己喜欢的主题并进行一系列的配置</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 经验分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>testCATE</title>
       <link href="/2022/05/10/testCATE/"/>
       <url>/2022/05/10/testCATE/</url>
