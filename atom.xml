@@ -6,7 +6,7 @@
   <link href="https://doubleyue.life/atom.xml" rel="self"/>
   
   <link href="https://doubleyue.life/"/>
-  <updated>2022-05-10T05:54:23.896Z</updated>
+  <updated>2022-05-10T05:59:14.471Z</updated>
   <id>https://doubleyue.life/</id>
   
   <author>
@@ -18,54 +18,25 @@
   
   <entry>
     <title>readme</title>
-    <link href="https://doubleyue.life/2022/05/10/readme-2/"/>
-    <id>https://doubleyue.life/2022/05/10/readme-2/</id>
-    <published>2022-05-10T05:54:23.000Z</published>
-    <updated>2022-05-10T05:54:23.896Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>readme</title>
-    <link href="https://doubleyue.life/2022/05/10/readme-1/"/>
-    <id>https://doubleyue.life/2022/05/10/readme-1/</id>
-    <published>2022-05-10T05:54:13.000Z</published>
-    <updated>2022-05-10T05:54:13.417Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>readme</title>
     <link href="https://doubleyue.life/2022/05/10/readme/"/>
     <id>https://doubleyue.life/2022/05/10/readme/</id>
     <published>2022-05-10T05:54:04.000Z</published>
-    <updated>2022-05-10T05:54:59.140Z</updated>
+    <updated>2022-05-10T05:59:14.471Z</updated>
     
-    <content type="html"><![CDATA[<p>测试tags</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="测试tags和cate">测试tags和cate</h2><p>在每个文档的最前面添加tags</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;测试tags&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;测试tags和cate&quot;&gt;测试tags和cate&lt;/h2&gt;
+&lt;p&gt;在每个文档的最前面添加tags&lt;/p&gt;
 </summary>
       
     
     
     
     
-    <category term="Foo" scheme="https://doubleyue.life/tags/Foo/"/>
-    
-    <category term="Bar" scheme="https://doubleyue.life/tags/Bar/"/>
-    
-    <category term="Baz" scheme="https://doubleyue.life/tags/Baz/"/>
+    <category term="test" scheme="https://doubleyue.life/tags/test/"/>
     
   </entry>
   
