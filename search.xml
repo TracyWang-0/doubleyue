@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>Cplusplus八股</title>
+      <link href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/"/>
+      <url>/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一c和c的区别">一、C++和C的区别</h3><ol type="1"><li>面向过程和面向对象的区别</li><li>关键字不一样</li></ol><h3 id="二几个关键字">二、几个关键字</h3><ol type="1"><li>volatile</li><li>final</li><li>const</li></ol><h3 id="三三个特性">三、三个特性</h3><ol type="1"><li>封装</li><li>继承</li><li>多态</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 养家糊口 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 知识积累 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MySQL索引</title>
       <link href="/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/"/>
       <url>/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/</url>

@@ -45,6 +45,37 @@
   </entry>
   
   <entry>
+    <title>Cplusplus八股</title>
+    <link href="https://doubleyue.life/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/"/>
+    <id>https://doubleyue.life/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/</id>
+    <published>2022-05-10T14:59:53.000Z</published>
+    <updated>2022-05-10T15:33:36.321Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一c和c的区别">一、C++和C的区别</h3><ol type="1"><li>面向过程和面向对象的区别</li><li>关键字不一样</li></ol><h3 id="二几个关键字">二、几个关键字</h3><ol type="1"><li>volatile</li><li>final</li><li>const</li></ol><h3 id="三三个特性">三、三个特性</h3><ol type="1"><li>封装</li><li>继承</li><li>多态</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;一c和c的区别&quot;&gt;一、C++和C的区别&lt;/h3&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;面向过程和面向对象的区别&lt;/li&gt;
+&lt;li&gt;关键字不一样&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;二几个关键字&quot;&gt;二、几个关键字&lt;/h3&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;vo</summary>
+      
+    
+    
+    
+    <category term="养家糊口" scheme="https://doubleyue.life/categories/%E5%85%BB%E5%AE%B6%E7%B3%8A%E5%8F%A3/"/>
+    
+    
+    <category term="知识积累" scheme="https://doubleyue.life/tags/%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MySQL索引</title>
     <link href="https://doubleyue.life/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/"/>
     <id>https://doubleyue.life/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/</id>
