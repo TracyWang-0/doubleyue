@@ -34,16 +34,21 @@
     <link href="https://doubleyue.life/2022/05/09/test/"/>
     <id>https://doubleyue.life/2022/05/09/test/</id>
     <published>2022-05-08T16:40:17.000Z</published>
-    <updated>2022-05-10T04:51:39.404Z</updated>
+    <updated>2022-05-10T04:53:55.345Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="第一次用hexo写博客"><a href="#第一次用hexo写博客" class="headerlink" title="第一次用hexo写博客"></a>第一次用hexo写博客</h2><pre><code>mermaidgraph TD;  A--&gt;B;  A--&gt;C;  B--&gt;D;  C--&gt;D;</code></pre>]]></content>
+    <content type="html"><![CDATA[<h2 id="第一次用hexo写博客">第一次用hexo写博客</h2><pre><code>mermaidgraph TD;  A--&gt;B;  A--&gt;C;  B--&gt;D;  C--&gt;D;</code></pre><p><span class="math display">\[\begin{equation}\left\{\begin{array}{lr}x=\dfrac{3\pi}{2}(1+2t)\cos(\dfrac{3\pi}{2}(1+2t)), &amp; \\y=s, &amp; 0 \leq s \leq L,|t| \leq1. \\z=\dfrac{3\pi}{2}(1+2t)\sin(\dfrac{3\pi}{2}(1+2t)), &amp;  \end{array}\right.\end{equation}\]</span></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;第一次用hexo写博客&quot;&gt;&lt;a href=&quot;#第一次用hexo写博客&quot; class=&quot;headerlink&quot; title=&quot;第一次用hexo写博客&quot;&gt;&lt;/a&gt;第一次用hexo写博客&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;mermaid
+    <summary type="html">&lt;h2 id=&quot;第一次用hexo写博客&quot;&gt;第一次用hexo写博客&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;mermaid
 graph TD;
-  A--&amp;gt</summary>
+  A--&amp;gt;B;
+  A--&amp;gt;C;
+  B--&amp;gt;D;
+  C--&amp;gt;D;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span cla</summary>
       
     
     
@@ -71,7 +76,7 @@ graph TD;
     <published>2022-05-08T08:47:15.882Z</published>
     <updated>2022-05-08T08:47:15.882Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start">Quick Start</h2><h3 id="create-a-new-post">Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server">Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files">Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites">Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
       
