@@ -21,7 +21,7 @@
       <link href="/2022/05/09/test/"/>
       <url>/2022/05/09/test/</url>
       
-        <content type="html"><![CDATA[<h2 id="第一次用hexo写博客"><a href="#第一次用hexo写博客" class="headerlink" title="第一次用hexo写博客"></a>第一次用hexo写博客</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="第一次用hexo写博客"><a href="#第一次用hexo写博客" class="headerlink" title="第一次用hexo写博客"></a>第一次用hexo写博客</h2><pre><code>mermaidgraph TD;  A--&gt;B;  A--&gt;C;  B--&gt;D;  C--&gt;D;</code></pre>]]></content>
       
       
       
