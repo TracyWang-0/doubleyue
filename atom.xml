@@ -6,7 +6,7 @@
   <link href="https://doubleyue.life/atom.xml" rel="self"/>
   
   <link href="https://doubleyue.life/"/>
-  <updated>2022-05-10T14:56:03.418Z</updated>
+  <updated>2022-05-10T14:59:53.745Z</updated>
   <id>https://doubleyue.life/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cplusplus八股</title>
+    <link href="https://doubleyue.life/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1-1/"/>
+    <id>https://doubleyue.life/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1-1/</id>
+    <published>2022-05-10T14:59:53.000Z</published>
+    <updated>2022-05-10T14:59:53.745Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>MySQL索引</title>
