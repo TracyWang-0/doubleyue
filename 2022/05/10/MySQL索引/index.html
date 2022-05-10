@@ -27,10 +27,10 @@
 <meta property="og:description" content="什么是index  帮助MySQL提高查询效率的数据结构 优点：大大加快数据查询速度 缺点：①维护索引需要耗费数据库资源；②占用磁盘空间；③对表的数据进行增删改的时候需要维护索引，速度会受到影响。  索引分类  innoDB  主键索引：设置为主键的时候，innodb为聚簇索引，不允许有空值 单值索引&#x2F;单列索引&#x2F;普通索引：一个索引只包含单个列，一个表可以有多个单列索引 唯一索引：索引列的值必须唯">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://doubleyue.life/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/image-20220505233324023.png">
-<meta property="og:image" content="https://doubleyue.life/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/image-20220506001614319-2195764.png">
+<meta property="og:image" content="https://doubleyue.life/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/image-20220506001614319.png">
 <meta property="og:image" content="https://doubleyue.life/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/image-20220506002554510.png">
 <meta property="article:published_time" content="2022-05-10T14:55:13.000Z">
-<meta property="article:modified_time" content="2022-05-10T15:22:35.112Z">
+<meta property="article:modified_time" content="2022-05-10T15:23:32.969Z">
 <meta property="article:author" content="doubleyue">
 <meta property="article:tag" content="知识积累">
 <meta name="twitter:card" content="summary">
@@ -567,7 +567,7 @@
 </ol></li>
 <li><p>非聚簇索引：将数据与索引分开存储，索引结构的叶子结点指向了数据对应的位置。比如单列索引等</p></li>
 <li><p>特点：①在innodb中，一个表中只能有一个聚簇索引，在聚簇索引上创建的索引称之为辅助索引；②非聚簇索引都是辅助索引，比如单列索引、唯一索引、复合索引。③<strong>辅助索引</strong>的叶子节点存储的不是行的物理位置，而是主键值。④辅助索引访问数据总是需要<strong>二次查找</strong>。</p>
-<p><img src="image-20220506001614319-2195764.png" alt="image-20220506001614319" style="zoom:75%;"></p></li>
+<p><img src="image-20220506001614319.png" alt="image-20220506001614319" style="zoom:75%;"></p></li>
 <li><p>面试题：为什么辅助索引插入的主键值而不是物理位置？因为增删改的时候需要修改地址，如果非聚簇索引存储的地址，会导致在增删改的时候额外修改索引。</p></li>
 </ol></li>
 <li><p>myISAM的索引：非聚簇索引</p>
@@ -581,7 +581,7 @@
             <p>原文作者：<a href="https://doubleyue.life">doubleyue</a>
             <p>原文链接：<a href="https://doubleyue.life/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">https://doubleyue.life/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/</a>
             <p>发表日期：<a href="https://doubleyue.life/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">May 10th 2022, 10:55:13 pm</a>
-            <p>更新日期：<a href="https://doubleyue.life/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">May 10th 2022, 11:22:35 pm</a>
+            <p>更新日期：<a href="https://doubleyue.life/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">May 10th 2022, 11:23:32 pm</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -796,13 +796,13 @@
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/10</span>
-            <a class="archive-post-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">Cplusplus八股</a>
+            <a class="archive-post-title" href="/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">MySQL索引</a>
         </li>
     
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/10</span>
-            <a class="archive-post-title" href="/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">MySQL索引</a>
+            <a class="archive-post-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">Cplusplus八股</a>
         </li>
     
         
