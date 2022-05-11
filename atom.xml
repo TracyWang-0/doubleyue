@@ -6,7 +6,7 @@
   <link href="https://doubleyue.life/atom.xml" rel="self"/>
   
   <link href="https://doubleyue.life/"/>
-  <updated>2022-05-10T15:31:12.301Z</updated>
+  <updated>2022-05-11T06:25:10.758Z</updated>
   <id>https://doubleyue.life/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>设计模式之单例模式</title>
+    <link href="https://doubleyue.life/2022/05/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://doubleyue.life/2022/05/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</id>
+    <published>2022-05-11T06:25:10.000Z</published>
+    <updated>2022-05-11T06:25:10.758Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>设计模式之工厂模式</title>
+    <link href="https://doubleyue.life/2022/05/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://doubleyue.life/2022/05/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</id>
+    <published>2022-05-11T05:02:43.000Z</published>
+    <updated>2022-05-11T06:24:55.631Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一简单工厂模式simple-factory-pattern">一、简单工厂模式Simple Factory Pattern</h3><p>又称静态工厂方法Static Factory Method，属于<strong>创建型模式</strong>。</p><p>根据参数的不同返回不同类的实例。</p><p>简单工厂模式专门创建一个类来创建其他类的实例，被创建的实例通常具有共同的父类。类图如下：</p><p><img src="image-20220511132031921.png" alt="image-20220511132031921" style="zoom:50%;"></p><p>优点：将对象的创建和使用分离，把创建产品的过程交给专门的工厂类负责，客户端不用管具体是如何实现的</p><p>缺点：不够灵活，新增一个产品就需要修改工厂类，在工厂中加入必要的业务逻辑，违反了<strong>开闭原则</strong>。</p><h3 id="二工厂模式">二、工厂模式</h3><p>定义一个用于创建对象的接口，让子类决定实例化哪个类。工厂方法使一个类的实例化延迟到其子类。也就是说：</p><p>把核心工厂变成一个抽象接口，为不同的产品创建不同的子工厂，这样子产品的实例化将在子工厂中完成，如果增加新的产品，则创建新的子工厂即可，不需要修改原来的工厂类。类图如下：</p><figure><img src="image-20220511133928629.png" alt="image-20220511133928629"><figcaption aria-hidden="true">image-20220511133928629</figcaption></figure><h3 id="三抽象工厂模式">三、抽象工厂模式</h3><p>是工厂模式的扩展，使得每个子工厂可以创建多个产品，如果只有一个产品体系的话会退化成工厂模式，类图如下：</p><figure><img src="image-20220511142208829.png" alt="image-20220511142208829"><figcaption aria-hidden="true">image-20220511142208829</figcaption></figure><p>缺点：如果需要增加产品体系的话，仍旧需要修改抽象工厂和具体工厂的代码，违反<strong>开闭原则</strong>。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;一简单工厂模式simple-factory-pattern&quot;&gt;一、简单工厂模式Simple Factory Pattern&lt;/h3&gt;
+&lt;p&gt;又称静态工厂方法Static Factory Method，属于&lt;strong&gt;创建型模式&lt;/strong&gt;。&lt;/p&gt;
+&lt;p</summary>
+      
+    
+    
+    
+    <category term="养家糊口" scheme="https://doubleyue.life/categories/%E5%85%BB%E5%AE%B6%E7%B3%8A%E5%8F%A3/"/>
+    
+    <category term="设计模式" scheme="https://doubleyue.life/categories/%E5%85%BB%E5%AE%B6%E7%B3%8A%E5%8F%A3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="知识积累" scheme="https://doubleyue.life/tags/%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>2022暑期实习华为面试经验分享</title>
