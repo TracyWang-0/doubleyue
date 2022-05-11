@@ -451,7 +451,26 @@
                 <span class="abstract-title-text">设计模式之单例模式</span>
             </a>
             <div class="abstract-content">
-                
+                一、是什么
+定义：确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。
+因此有几个特征：
+
+构造方法不能公开，只能是private
+这个实例是当前类的实例，也就是当前类的类成员变量，用static修饰的类静态变量
+需要提供一个静态方法，向外界提供当前类的实例
+
+应用场景：
+
+序列号生成器
+web页面的计数器
+如果创建一个对象需要消耗很多资源的时候，可以用单例模式来减少资源消耗
+
+二、分类
+根据实例化的时机不同，可以分为饿汉式和懒汉式。
+
+饿汉模式：在类加载的时候，立刻实例化。
+class Singleton{
+	private static Singleton singlet...
             </div>
             <!-- read more -->
             
@@ -461,6 +480,14 @@
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/11</span>
                 </div>
                 <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="知识积累">知识积累</a>
+    
+</div>
+
                 
             </div>
         </article>
@@ -992,13 +1019,13 @@ full text全文索引：在定义索引的列上支持值的全文查找，允�
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/10</span>
-            <a class="archive-post-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">Cplusplus八股</a>
+            <a class="archive-post-title" href="/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">MySQL索引</a>
         </li>
     
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/10</span>
-            <a class="archive-post-title" href="/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">MySQL索引</a>
+            <a class="archive-post-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">Cplusplus八股</a>
         </li>
     
         
@@ -1013,14 +1040,14 @@ full text全文索引：在定义索引的列上支持值的全文查找，允�
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
         
-            <span class="sidebar-tag-name" data-tags="知识积累">
-                <span class="iconfont-archer">&#xe606;</span>
-                知识积累
-            </span>
-        
             <span class="sidebar-tag-name" data-tags="经验分享">
                 <span class="iconfont-archer">&#xe606;</span>
                 经验分享
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="知识积累">
+                <span class="iconfont-archer">&#xe606;</span>
+                知识积累
             </span>
         
     </div>
