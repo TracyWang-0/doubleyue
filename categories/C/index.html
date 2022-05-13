@@ -21,7 +21,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="doubleyue的个人博客">
-<meta property="og:url" content="https://doubleyue.life/categories/%E5%85%BB%E5%AE%B6%E7%B3%8A%E5%8F%A3/index.html">
+<meta property="og:url" content="https://doubleyue.life/categories/C/index.html">
 <meta property="og:site_name" content="doubleyue的个人博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="doubleyue">
@@ -431,215 +431,21 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2022/05/11/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99/">
-                
-                <span class="abstract-title-text">面向对象的六大原则</span>
-            </a>
-            <div class="abstract-content">
-                一、单一职责原则
-每个模块/类都应该对软件提供的功能的一部分负责，而这个责任应该完全由类来封装。
-二、开闭原则
-软件中的对象(类、模块、函数等)对扩展是开放的，对修改是封闭的。 当然，这只是理想化的愿景，在实际开发中，修改原有代码、扩展代码往往是同时存在的。 已存在的实现类对于修改是封闭的，新的实现类可以通过覆写父类的接口应对变化。
-三、里氏替换原则
-所有使用基类的地方必须能透明地使用其子类的对象
-四、依赖倒转原则
-是指一种特定的解耦（传统的依赖关系建立在高层次上，而具体的策略设置则应用在低层次的模块上）形式，使得高层次的模块不依赖于低层次的模块的实现细节，依赖关系被颠倒（反转），从而使...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/11">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/11</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="知识积累">知识积累</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
-                
-                <span class="abstract-title-text">设计模式之单例模式</span>
-            </a>
-            <div class="abstract-content">
-                一、是什么
-定义：确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。
-因此有几个特征：
-
-构造方法不能公开，只能是private
-这个实例是当前类的实例，也就是当前类的类成员变量，用static修饰的类静态变量
-需要提供一个静态方法，向外界提供当前类的实例
-
-应用场景：
-
-序列号生成器
-web页面的计数器
-如果创建一个对象需要消耗很多资源的时候，可以用单例模式来减少资源消耗
-
-二、分类
-根据实例化的时机不同，可以分为饿汉式和懒汉式。
-
-饿汉模式：在类加载的时候，立刻实例化。
-class Singleton{
-	private static Singleton singlet...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/11">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/11</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="知识积累">知识积累</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/">
-                
-                <span class="abstract-title-text">设计模式之工厂模式</span>
-            </a>
-            <div class="abstract-content">
-                一、简单工厂模式Simple Factory Pattern
-又称静态工厂方法Static Factory Method，属于创建型模式。
-根据参数的不同返回不同类的实例。
-简单工厂模式专门创建一个类来创建其他类的实例，被创建的实例通常具有共同的父类。类图如下：
-
-优点：将对象的创建和使用分离，把创建产品的过程交给专门的工厂类负责，客户端不用管具体是如何实现的
-缺点：不够灵活，新增一个产品就需要修改工厂类，在工厂中加入必要的业务逻辑，违反了开闭原则。
-二、工厂模式
-定义一个用于创建对象的接口，让子类决定实例化哪个类。工厂方法使一个类的实例化延迟到其子类。也就是说：
-把核心工厂变成一个抽象...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/11">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/11</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="知识积累">知识积累</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/10/2022%E6%9A%91%E6%9C%9F%E5%AE%9E%E4%B9%A0%E5%8D%8E%E4%B8%BA%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/">
-                
-                <span class="abstract-title-text">2022暑期实习华为面试经验分享</span>
-            </a>
-            <div class="abstract-content">
-                华为池子，深不可测~ 不过流程进展很快，而且很快会给结果，整体感觉很棒。
-
-投递简历：
-
-在有个实习群里加到以为hr，说有hc，于是投递了通用软件开发工程师的岗位，可以投两个意向。（但是第二个意向其实是不起作用的。
-
-笔试：
-
-第二周的周二收到周三晚上笔试的邮件，共3道题（分值100,200,300），达到100分就有面试机会。比较麻烦的点在于输入输出，需要从字符串解析出需要读取的数字，输出也是需要把数组转成串输出。
-
-综合测评：
-
-一周内收到邮件参加综合测评和面试，问了hr说是性格测试，约35min可以完成。有同学表示这个测试不过的话，可以再次参加一次。
-
-技术面：
-
-同综合测评一起发...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/10">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/10</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="经验分享">经验分享</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
             <a class="abstract-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">
                 
-                <span class="abstract-title-text">Cplusplus八股</span>
+                <span class="abstract-title-text">C++八股</span>
             </a>
             <div class="abstract-content">
                 一、C++和C的区别
-
 面向过程和面向对象的区别
 关键字不一样
 
 二、几个关键字
-
 volatile
 final
 const
 
 三、三个特性
-
 封装
 继承
 多态
@@ -650,7 +456,7 @@ const
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/10">
+                <div class="abstract-date" title="Last updated: 2022/05/13">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/10</span>
                 </div>
                 <!-- tags -->
@@ -805,7 +611,16 @@ const
         
         
         
+        
+        
+        
+        
+        
     
+        
+        
+        
+        
         
         
         
@@ -838,7 +653,7 @@ const
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 7
+        Total : 8
         </div>
         <!-- search  -->
         
@@ -852,6 +667,12 @@ const
             <div class="archive-year"> 2022 </div>
             <ul class="year-list">
             
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/12</span>
+            <a class="archive-post-title" href="/2022/05/12/OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B%E5%92%8CTCP-IP%E4%BA%94%E5%B1%82%E6%A8%A1%E5%9E%8B/">OSI七层模型和TCP/IP五层模型</a>
+        </li>
+    
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/11</span>
@@ -879,7 +700,7 @@ const
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/10</span>
-            <a class="archive-post-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">Cplusplus八股</a>
+            <a class="archive-post-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">C++八股</a>
         </li>
     
         
@@ -921,9 +742,14 @@ const
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
-        <span class="sidebar-category-name" data-categories="养家糊口">
+        <span class="sidebar-category-name" data-categories="C++">
             <span class="iconfont-archer">&#xe60a;</span>
-            养家糊口
+            C++
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="计算机网络">
+            <span class="iconfont-archer">&#xe60a;</span>
+            计算机网络
         </span>
     
         <span class="sidebar-category-name" data-categories="设计模式">

@@ -21,7 +21,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="doubleyue的个人博客">
-<meta property="og:url" content="https://doubleyue.life/categories/%E5%85%BB%E5%AE%B6%E7%B3%8A%E5%8F%A3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.html">
+<meta property="og:url" content="https://doubleyue.life/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="doubleyue的个人博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="doubleyue">
@@ -436,20 +436,16 @@
                 <span class="abstract-title-text">面向对象的六大原则</span>
             </a>
             <div class="abstract-content">
-                一、单一职责原则
-每个模块/类都应该对软件提供的功能的一部分负责，而这个责任应该完全由类来封装。
-二、开闭原则
-软件中的对象(类、模块、函数等)对扩展是开放的，对修改是封闭的。 当然，这只是理想化的愿景，在实际开发中，修改原有代码、扩展代码往往是同时存在的。 已存在的实现类对于修改是封闭的，新的实现类可以通过覆写父类的接口应对变化。
-三、里氏替换原则
-所有使用基类的地方必须能透明地使用其子类的对象
-四、依赖倒转原则
-是指一种特定的解耦（传统的依赖关系建立在高层次上，而具体的策略设置则应用在低层次的模块上）形式，使得高层次的模块不依赖于低层次的模块的实现细节，依赖关系被颠倒（反转），从而使...
+                一、单一职责原则每个模块/类都应该对软件提供的功能的一部分负责，而这个责任应该完全由类来封装。
+二、开闭原则软件中的对象(类、模块、函数等)对扩展是开放的，对修改是封闭的。当然，这只是理想化的愿景，在实际开发中，修改原有代码、扩展代码往往是同时存在的。已存在的实现类对于修改是封闭的，新的实现类可以通过覆写父类的接口应对变化。
+三、里氏替换原则所有使用基类的地方必须能透明地使用其子类的对象
+四、依赖倒转原则是指一种特定的解耦（传统的依赖关系建立在高层次上，而具体的策略设置则应用在低层次的模块上）形式，使得高层次的模块不依赖于低层次的模块的实现细节，依赖关系被颠倒（反转），从而使得低层次模块...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/11">
+                <div class="abstract-date" title="Last updated: 2022/05/13">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/11</span>
                 </div>
                 <!-- tags -->
@@ -478,8 +474,7 @@
                 <span class="abstract-title-text">设计模式之单例模式</span>
             </a>
             <div class="abstract-content">
-                一、是什么
-定义：确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。
+                一、是什么定义：确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。
 因此有几个特征：
 
 构造方法不能公开，只能是private
@@ -492,18 +487,17 @@
 web页面的计数器
 如果创建一个对象需要消耗很多资源的时候，可以用单例模式来减少资源消耗
 
-二、分类
-根据实例化的时机不同，可以分为饿汉式和懒汉式。
+二、分类根据实例化的时机不同，可以分为饿汉式和懒汉式。
 
 饿汉模式：在类加载的时候，立刻实例化。
 class Singleton{
-	private static Singleton singlet...
+	private static Singleton singleton...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/11">
+                <div class="abstract-date" title="Last updated: 2022/05/13">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/11</span>
                 </div>
                 <!-- tags -->
@@ -532,22 +526,21 @@ class Singleton{
                 <span class="abstract-title-text">设计模式之工厂模式</span>
             </a>
             <div class="abstract-content">
-                一、简单工厂模式Simple Factory Pattern
-又称静态工厂方法Static Factory Method，属于创建型模式。
+                一、简单工厂模式Simple Factory Pattern又称静态工厂方法Static Factory Method，属于创建型模式。
 根据参数的不同返回不同类的实例。
 简单工厂模式专门创建一个类来创建其他类的实例，被创建的实例通常具有共同的父类。类图如下：
 
+
 优点：将对象的创建和使用分离，把创建产品的过程交给专门的工厂类负责，客户端不用管具体是如何实现的
 缺点：不够灵活，新增一个产品就需要修改工厂类，在工厂中加入必要的业务逻辑，违反了开闭原则。
-二、工厂模式
-定义一个用于创建对象的接口，让子类决定实例化哪个类。工厂方法使一个类的实例化延迟到其子类。也就是说：
-把核心工厂变成一个抽象...
+二、工厂模式定义一个用于创建对象的接口，让子类决定实例化哪个类。工厂方法使一个类的实例化延迟到其子类。也就是说：
+把核心工厂变成一个抽象接...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/11">
+                <div class="abstract-date" title="Last updated: 2022/05/13">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/11</span>
                 </div>
                 <!-- tags -->
@@ -702,7 +695,16 @@ class Singleton{
         
         
         
+        
+        
+        
+        
+        
     
+        
+        
+        
+        
         
         
         
@@ -735,7 +737,7 @@ class Singleton{
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 7
+        Total : 8
         </div>
         <!-- search  -->
         
@@ -749,6 +751,12 @@ class Singleton{
             <div class="archive-year"> 2022 </div>
             <ul class="year-list">
             
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/12</span>
+            <a class="archive-post-title" href="/2022/05/12/OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B%E5%92%8CTCP-IP%E4%BA%94%E5%B1%82%E6%A8%A1%E5%9E%8B/">OSI七层模型和TCP/IP五层模型</a>
+        </li>
+    
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/11</span>
@@ -776,7 +784,7 @@ class Singleton{
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/10</span>
-            <a class="archive-post-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">Cplusplus八股</a>
+            <a class="archive-post-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">C++八股</a>
         </li>
     
         
@@ -818,9 +826,14 @@ class Singleton{
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
-        <span class="sidebar-category-name" data-categories="养家糊口">
+        <span class="sidebar-category-name" data-categories="C++">
             <span class="iconfont-archer">&#xe60a;</span>
-            养家糊口
+            C++
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="计算机网络">
+            <span class="iconfont-archer">&#xe60a;</span>
+            计算机网络
         </span>
     
         <span class="sidebar-category-name" data-categories="设计模式">
