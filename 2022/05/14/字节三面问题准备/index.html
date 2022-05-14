@@ -19,18 +19,22 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="doubleyue的个人博客">
-<meta property="og:url" content="https://doubleyue.life/archives/2022/05/index.html">
+    <meta name="description" content="大早上睡不着的时候翻牛客搜字节三面，总结出来的各种问题。 这篇博客没有答案、只有问题 答案我估计还得查几天，再慢慢总结吧~ 壹、C++、数据结构相关  归并排序的思路，时间复杂度，空间复杂度，是否是稳定的排序算法？ 讲一下hashmap  原理 怎么扩容的，为什么8转换为树，为什么负载因子是0.75 新建的hashmap初始默认大小是多少 为什么尾插法能解决死循环 并发安全的hashmap有那些">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字节三面问题准备">
+<meta property="og:url" content="https://doubleyue.life/2022/05/14/%E5%AD%97%E8%8A%82%E4%B8%89%E9%9D%A2%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87/index.html">
 <meta property="og:site_name" content="doubleyue的个人博客">
+<meta property="og:description" content="大早上睡不着的时候翻牛客搜字节三面，总结出来的各种问题。 这篇博客没有答案、只有问题 答案我估计还得查几天，再慢慢总结吧~ 壹、C++、数据结构相关  归并排序的思路，时间复杂度，空间复杂度，是否是稳定的排序算法？ 讲一下hashmap  原理 怎么扩容的，为什么8转换为树，为什么负载因子是0.75 新建的hashmap初始默认大小是多少 为什么尾插法能解决死循环 并发安全的hashmap有那些">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-05-14T06:52:53.000Z">
+<meta property="article:modified_time" content="2022-05-14T07:46:12.151Z">
 <meta property="article:author" content="doubleyue">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/doubleyue.gif">
     
-    <title>Doubleyue&#39;s Life</title>
+    <title>字节三面问题准备 · Doubleyue&#39;s Life</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -220,6 +224,8 @@
         }
     </script>
     
+        <body class="post-body">
+    
         <!-- header -->
         <header class="header header-mobile">
     <!-- top read progress line -->
@@ -249,6 +255,17 @@
     </div>
     <!-- toggle banner for post layout -->
     
+        
+            <div class="banner">
+        
+            <div class="blog-title header-element">
+                <a href="/">Doubleyue&#39;s Life</a>
+            </div>
+            <div class="post-title header-element">
+                <a href="#" class="post-name">字节三面问题准备</a>
+            </div>
+        </div>
+    
 </header>
 
         <!-- fixed footer -->
@@ -275,24 +292,71 @@
 
 
 
+    height:50vh;
+
 ">
     
     <!-- 主页  -->
+    
+        
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/%E9%98%B3%E5%85%89%E6%9A%96%E6%9A%96.jpeg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+                字节三面问题准备
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+                
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页 meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">2k</span>阅读时长: <span class="post-count reading-time">6 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <!-- 撰写日期 -->
+                    <span class="iconfont-archer post-intro-calander">&#xe676;</span>
+                    <span class="post-intro-time">2022/05/14</span>
+                    <!-- busuanzi -->
+                    
+                        <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                            <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    
+                    <!-- 文章分享 -->
+                    <span class="share-wrapper">
+                        <span class="iconfont-archer share-icon">&#xe71d;</span>
+                        <span class="share-text">Share</span>
+                        <ul class="share-list">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -422,427 +486,204 @@
 
             <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
             <div class="container container-unloaded">
-                <main class="main index-page">
+                <main class="main post-page">
+    <article class="article-entry">
+        <p>大早上睡不着的时候翻牛客搜字节三面，总结出来的各种问题。</p>
+<p><strong>这篇博客没有答案、只有问题</strong></p>
+<p>答案我估计还得查几天，再慢慢总结吧~</p>
+<h2 id="壹c数据结构相关">壹、C++、数据结构相关</h2>
+<ol type="1">
+<li>归并排序的思路，时间复杂度，空间复杂度，是否是稳定的排序算法？</li>
+<li>讲一下hashmap
+<ol type="1">
+<li>原理</li>
+<li>怎么扩容的，为什么8转换为树，为什么负载因子是0.75</li>
+<li>新建的hashmap初始默认大小是多少</li>
+<li>为什么尾插法能解决死循环</li>
+<li>并发安全的hashmap有那些</li>
+</ol></li>
+<li>arraylist和linkedlist的区别</li>
+<li>hashSet和treeSet区别</li>
+<li>写一个单例</li>
+<li>为什么用volatile，为什么要用synchronized，重排序发生在哪一步</li>
+<li>synchronize的原理？lock和synchronized的区别</li>
+<li>C++中auto关键字实现原理</li>
+<li>说说链接器在链接过程都做了什么</li>
+<li>说说对模板元编程的理解</li>
+<li>常见算法的时间复杂度</li>
+<li>同或、异或</li>
+<li>多态你怎么理解的、写个多态吧</li>
+<li>设计模式</li>
+<li>停车场，两个出口两个入口，要求有查询剩余车位，以及车辆停车计费的功能，用面向对象的思想怎么设计类</li>
+</ol>
+<h2 id="贰操作系统">贰、操作系统</h2>
+<ol type="1">
+<li>各种MQ以及EventBus之间的区别，为什么选择了RocketMQ</li>
+<li>为什么用MQ，哪些项目用了MQ的特性</li>
+<li>如何增大消费者消费能力，能否无限增大消费者数量，假如资源无限大可以上线无限个消费者能否无限增大数量</li>
+<li>IO多路复用有哪几种实现？分别介绍优缺点</li>
+<li>内核态和用户态、用户态---&gt;内核态的方式</li>
+<li>对僵尸进程的理解</li>
+<li>线程同步说一下</li>
+<li>线程死锁</li>
+<li>后端开发比较关注的数据库、消息队列、缓存，了解过哪个</li>
+<li>进程和线程的区别</li>
+<li>进程通信的方式</li>
+<li>进程线程的场景题</li>
+<li>虚拟内存逻辑地址转物理地址</li>
+<li>生产者消费者模式知道吗？写一个生产者消费者模式吧</li>
+<li>linux中进程怎么通信</li>
+</ol>
+<h2 id="叁计算机网络">叁、计算机网络</h2>
+<ol type="1">
+<li>XSS攻击介绍一下，前缀树是用来干啥的</li>
+<li>ipv4和ipv6的区别</li>
+<li>什么是滑动窗口？是否固定？什么时候改变？</li>
+<li>TCP三次握手四次挥手过程，为啥握手是三次，挥手是四次？为什么要有最后一次挥手？</li>
+<li>http与tcp的keep alive的区别</li>
+<li>http
+<ol type="1">
+<li>状态码：多背诵几个</li>
+<li>http是什么</li>
+<li>https和http的区别。</li>
+<li>get和post的区别</li>
+</ol></li>
+<li>说下 RPC，与 HTTP 的区别</li>
+<li>怎么发起一个网络请求？用C++写一个发起网络请求</li>
+<li>手写个socket的过程</li>
+<li>es的可靠性怎么保证的</li>
+</ol>
+<h2 id="肆数据库">肆、数据库</h2>
+<ol type="1">
+<li>MySQL为什么要设计索引、索引优化</li>
+<li>慢SQL查询、慢SQL优化</li>
+<li>讲讲分库分表</li>
+<li>索引树高度一般是怎样的，如何根据一次IO的数据量及一些其他数据算出高度</li>
+<li>MySQL联合索引列出各种情况看能否走索引</li>
+<li>插入和删除时索引树的变化</li>
+<li>讲讲分布式锁，如何实现</li>
+<li>SQL和NoSQL的区别，各自在什么场景下使用</li>
+<li>Mysql有哪几种引擎？为什么MyIsam比InnoDb查询快？</li>
+<li>倒排索引是什么？</li>
+<li>说说一条sql语句的执行过程</li>
+<li>缓存和 DB 之间怎么保证数据一致性</li>
+<li>说下索引二八原理、提升读性能牺牲写性能的数据结构一个索引对应一颗 B+树哈希、有序数组、二叉树查询的优缺点那为什么不用跳表呢？</li>
+<li>火车票区间查询怎么设计数据结构比如上海去武汉，途经南京、合肥现在要快速查询出两点之间票的库存</li>
+<li>怎么删除某一行某一列的数据</li>
+<li>innodb的回滚怎么做的，详细一点</li>
+</ol>
+<h2 id="伍算法和其他知识">伍、算法和其他知识</h2>
+<ol type="1">
+<li><p>随机的一个数组，求出其中连续段最多有几个数字，如[9，3，5，11，8，10，29，30]，连续的有四段，分别为{3}，{5}，{8，9，10，11}，{29，30}；要求时间复杂度O(n)、不能用排序：https://leetcode-cn.com/problems/longest-consecutive-sequence/</p></li>
+<li><p>讲讲LRU和LFU、手撕LFU、怎么实现LFU最优</p></li>
+<li><p>无序数组，找到最小的不存在于数组中的正整数</p></li>
+<li><p>多个地铁站点，如何实现选择两站点的最优路线（时间、距离等因素），如果换乘时间也要考虑呢？</p></li>
+<li><p>矩阵旋转</p></li>
+<li><p>给一个表示扑克牌的整数数组（1-52），判断有无长度为5的顺子</p></li>
+<li><p>二叉树层序遍历</p></li>
+<li><p>下一个排列</p></li>
+<li><p>mysql题: 查询成绩排名前5名的同学</p></li>
+<li><p>leetcode113. 路径总和 II</p></li>
+<li><p>简单的csv读取</p></li>
+<li><p>两个版本号比大小，主/子版本号可能有前置0、中间用.分隔，版本号1小于版本号2时返回-1，等于时返回0，大于时返回1。如果一个版本号是另一个版本号的前缀，并且另一个版本号后跟子版本号都为0，那么认为这两个版本号相等，否则认为第二个版本号大于第一个版本号。</p></li>
+<li><p>一个二叉树，求树根到各个叶子结点路径上的k值之和，k值定义为路径上各节点值顺次连接而成的十进制数...（如1-&gt;2-&gt;4，1为根，4为叶，这条路经贡献的值为124）</p></li>
+<li><p>sql：《学生姓名得分表》中有四列，ID（学号/唯一key），name（可能重名），course（选课名，不同同学可能选择一样或不一样），score（0-100分，&lt;60分算不及格），每一行放置的是某一位同学某一门课程的得分 。求平均分不及格的学生姓名</p></li>
+<li><p>假设给予一个数组，其size已知已知数组内放置的是排好序的自然数（从小到大）问数组内是否存在一个数，其重复的次数超过数组长度的一半期望时间复杂度O(logn)</p>
+<p>（例如100个数的一个数组，假如里面有一个数重复了超过50次，比如51次、55次、80次，那么返回True，否则返回False）</p></li>
+<li><p>lc 43</p></li>
+<li><p>模拟微信群随机红包，输入金额、人数，返回金额数组；注意最小单位分</p></li>
+<li><p>lc 54 螺旋矩阵</p></li>
+<li><p>怎么根据 0-5 随机函数得到 0-8 随机函数</p></li>
+<li><p>找出一个数组中出现一次的数，其它都出现两次</p></li>
+<li><p>数组中有两个出现过一次的数，怎么找</p></li>
+<li><p>旋转数组求最小</p></li>
+<li><p>写一个函数一秒内调用1000次返回true，超过1000次返回false，超过1s重新统计</p></li>
+<li><p>Paxos算法原理</p></li>
+<li><p>Service mesh了解吗</p></li>
+<li><p>幂等</p></li>
+</ol>
+<h2 id="陆发散性问题">陆、发散性问题</h2>
+<ol type="1">
+<li>怎么学习技术的、有没有学过计算机相关的课，自己是如何学的</li>
+<li>项目经历和实习经历、收获是什么、项目的架构和技术难点</li>
+<li>项目中的难点、模块然后还问了一些依赖模块的底层实现</li>
+<li>项目的数据量以及 QPS 能达到多少</li>
+<li>对数据结构有什么理解</li>
+<li>项目、实习的收获和不足</li>
+<li>时间为15:30的时针与分针的夹角</li>
+<li>设计操作系统的复制粘贴功能</li>
+<li>个人优点和缺点</li>
+<li>性格、优点缺点、大学生活、成绩等等这些</li>
+<li>实习时长</li>
+<li>来字节最想得到什么、想做什么</li>
+<li>你希望你处于一个什么样的工作环境</li>
+<li>学过什么课程</li>
+<li>为了面试做了什么准备</li>
+<li>为什么要做程序员</li>
+<li>你觉得你聪明吗</li>
+<li>对岗位的了解</li>
+<li>对字节的了解</li>
+<li>内心的源动力来源于什么</li>
+<li>职业规划</li>
+<li></li>
+</ol>
+<h2 id="柒反问环节">柒、反问环节</h2>
+
+    </article>
+    <!-- license -->
     
-        
-        
-        
-        
+        <div class="license-wrapper">
+            <p>原文作者：<a href="https://doubleyue.life">doubleyue</a>
+            <p>原文链接：<a href="https://doubleyue.life/2022/05/14/%E5%AD%97%E8%8A%82%E4%B8%89%E9%9D%A2%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87/">https://doubleyue.life/2022/05/14/%E5%AD%97%E8%8A%82%E4%B8%89%E9%9D%A2%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87/</a>
+            <p>发表日期：<a href="https://doubleyue.life/2022/05/14/%E5%AD%97%E8%8A%82%E4%B8%89%E9%9D%A2%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87/">May 14th 2022, 2:52:53 pm</a>
+            <p>更新日期：<a href="https://doubleyue.life/2022/05/14/%E5%AD%97%E8%8A%82%E4%B8%89%E9%9D%A2%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87/">May 14th 2022, 3:46:12 pm</a>
+            <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator -->
+    <ul class="post-paginator">
+        <li class="next">
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/14/%E5%AD%97%E8%8A%82%E4%B8%89%E9%9D%A2%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87/">
-                
-                <span class="abstract-title-text">字节三面问题准备</span>
-            </a>
-            <div class="abstract-content">
-                大早上睡不着的时候翻牛客搜字节三面，总结出来的各种问题。
-这篇博客没有答案、只有问题
-答案我估计还得查几天，再慢慢总结吧~
-壹、C++、数据结构相关
-
-归并排序的思路，时间复杂度，空间复杂度，是否是稳定的排序算法？
-讲一下hashmap
-
-原理
-怎么扩容的，为什么8转换为树，为什么负载因子是0.75
-新建的hashmap初始默认大小是多少
-为什么尾插法能解决死循环
-并发安全的hashmap有那些
-
-arraylist和linkedlist的区别
-hashSet和treeSet区别
-写一个单例
-为什么用volatile，为什么要用synchronized，重排序发生在哪一步
-synchro...
-            </div>
-            <!-- read more -->
+        </li>
+        <li class="previous">
             
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/14">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/14</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2022/05/13/%E9%80%9A%E8%BF%87hexo+github%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/" title="通过hexo+github配置个人博客的过程">
+                    <div class="prevTitle">通过hexo+github配置个人博客的过程</div>
+                </a>
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/13/%E9%80%9A%E8%BF%87hexo+github%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/">
-                
-                <span class="abstract-title-text">通过hexo+github配置个人博客的过程</span>
-            </a>
-            <div class="abstract-content">
-                壹、购买域名并设置
-
-注册域名就可以通过个人独特的域名访问自己的博客啦~
-当然也可以不注册，不注册域名的话也可以用github.io来访问，都一样的
-现在挺多平台都可以注册域名，我选择了阿里云，自己找个自己喜欢的域名就可以啦~我自己定了doubleyue.life
-域名配置DNS解析，如下图所示：箭头指向的地方就用github的用户名xxx.github.io就行
-
-image-20220513134905627
+        </li>
+    </ul>
+    <!-- comment -->
+    
+        <div class="post-comment">
+            <!-- 来必力 City 版安装代码 -->
 
 
-贰、安装git
-
-到官网下载安装
-
-叁、创建GitHub仓库
-
-在github创建个人博客的仓库，我的是doubleyue
-
-肆、在仓库创建pages页面，并修改域名
-
-在...
-            </div>
-            <!-- read more -->
             
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/14">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/13</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
+
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/12/OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B%E5%92%8CTCP-IP%E4%BA%94%E5%B1%82%E6%A8%A1%E5%9E%8B/">
-                
-                <span class="abstract-title-text">OSI七层模型和TCP/IP五层模型</span>
-            </a>
-            <div class="abstract-content">
-                一、OSI七层模型
-从下到上依次为：① 物理层、② 数据链路层、③ 传输层、④ 网络层、 ⑤ 应用层、⑥ 会话层、 ⑦ 表示层
-二、TCP/IP五层模型
-从OSI七层模型发展而来，从下到上依次为：① 物理层、② 数据链路层、③ 传输层、④ 网络层、 ⑤ 应用层
 
-            </div>
-            <!-- read more -->
             
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/12</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="计算机网络">计算机网络</a>
-    
-</div>
 
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
+            <!-- utteranc评论 -->
+
+
+            <!-- partial('_partial/comment/changyan') -->
+            <!--PC版-->
+
+
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/11/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99/">
-                
-                <span class="abstract-title-text">面向对象的六大原则</span>
-            </a>
-            <div class="abstract-content">
-                一、单一职责原则
-每个模块/类都应该对软件提供的功能的一部分负责，而这个责任应该完全由类来封装。
-二、开闭原则
-软件中的对象(类、模块、函数等)对扩展是开放的，对修改是封闭的。 当然，这只是理想化的愿景，在实际开发中，修改原有代码、扩展代码往往是同时存在的。 已存在的实现类对于修改是封闭的，新的实现类可以通过覆写父类的接口应对变化。
-三、里氏替换原则
-所有使用基类的地方必须能透明地使用其子类的对象
-四、依赖倒转原则
-是指一种特定的解耦（传统的依赖关系建立在高层次上，而具体的策略设置则应用在低层次的模块上）形式，使得高层次的模块不依赖于低层次的模块的实现细节，依赖关系被颠倒（反转），从而使...
-            </div>
-            <!-- read more -->
             
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/11</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="设计模式">设计模式</a>
-    
-</div>
 
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
-                
-                <span class="abstract-title-text">设计模式之单例模式</span>
-            </a>
-            <div class="abstract-content">
-                一、是什么
-定义：确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。
-因此有几个特征：
 
-构造方法不能公开，只能是private
-这个实例是当前类的实例，也就是当前类的类成员变量，用static修饰的类静态变量
-需要提供一个静态方法，向外界提供当前类的实例
-
-应用场景：
-
-序列号生成器
-web页面的计数器
-如果创建一个对象需要消耗很多资源的时候，可以用单例模式来减少资源消耗
-
-二、分类
-根据实例化的时机不同，可以分为饿汉式和懒汉式。
-
-饿汉模式：在类加载的时候，立刻实例化。
-class Singleton{
-	private static Singleton singlet...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/11</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
+        </div>
     
+    <!-- timeliness note -->
+    <!-- idea from: https://hexo.fluid-dev.com/posts/hexo-injector/#%E6%96%87%E7%AB%A0%E6%97%B6%E6%95%88%E6%80%A7%E6%8F%90%E7%A4%BA -->
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="设计模式">设计模式</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/">
-                
-                <span class="abstract-title-text">设计模式之工厂模式</span>
-            </a>
-            <div class="abstract-content">
-                一、简单工厂模式Simple Factory Pattern
-又称静态工厂方法Static Factory Method，属于创建型模式。
-根据参数的不同返回不同类的实例。
-简单工厂模式专门创建一个类来创建其他类的实例，被创建的实例通常具有共同的父类。类图如下：
-
-优点：将对象的创建和使用分离，把创建产品的过程交给专门的工厂类负责，客户端不用管具体是如何实现的
-缺点：不够灵活，新增一个产品就需要修改工厂类，在工厂中加入必要的业务逻辑，违反了开闭原则。
-二、工厂模式
-定义一个用于创建对象的接口，让子类决定实例化哪个类。工厂方法使一个类的实例化延迟到其子类。也就是说：
-把核心工厂变成一个抽象...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/11</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="设计模式">设计模式</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/10/2022%E6%9A%91%E6%9C%9F%E5%AE%9E%E4%B9%A0%E5%8D%8E%E4%B8%BA%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/">
-                
-                <span class="abstract-title-text">2022暑期实习华为面试经验分享</span>
-            </a>
-            <div class="abstract-content">
-                华为池子，深不可测~ 不过流程进展很快，而且很快会给结果，整体感觉很棒。
-
-投递简历：
-
-在有个实习群里加到以为hr，说有hc，于是投递了通用软件开发工程师的岗位，可以投两个意向。（但是第二个意向其实是不起作用的。
-
-笔试：
-
-第二周的周二收到周三晚上笔试的邮件，共3道题（分值100,200,300），达到100分就有面试机会。比较麻烦的点在于输入输出，需要从字符串解析出需要读取的数字，输出也是需要把数组转成串输出。
-
-综合测评：
-
-一周内收到邮件参加综合测评和面试，问了hr说是性格测试，约35min可以完成。有同学表示这个测试不过的话，可以再次参加一次。
-
-技术面：
-
-同综合测评一起发...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/10</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">
-                
-                <span class="abstract-title-text">C++八股</span>
-            </a>
-            <div class="abstract-content">
-                一、C++和C的区别
-
-面向过程和面向对象的区别
-关键字不一样
-
-二、几个关键字
-
-volatile
-final
-const
-
-三、三个特性
-
-封装
-继承
-多态
-
-
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/10</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="C++">C++</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">
-                
-                <span class="abstract-title-text">MySQL索引</span>
-            </a>
-            <div class="abstract-content">
-                一、什么是index
-
-帮助MySQL提高查询效率的数据结构
-优点：大大加快数据查询速度
-缺点：①维护索引需要耗费数据库资源；②占用磁盘空间；③对表的数据进行增删改的时候需要维护索引，速度会受到影响。
-
-二、索引分类
-
-innoDB
-
-主键索引：设置为主键的时候，innodb为聚簇索引，不允许有空值
-单值索引/单列索引/普通索引：一个索引只包含单个列，一个表可以有多个单列索引
-唯一索引：索引列的值必须唯一，允许有空值，但是只能有一个null
-复合索引：一个索引包含多个列
-
-myISAM（不需要背）
-
-full text全文索引：在定义索引的列上支持值的全文查找，允许空值、重复值，只能在文...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/10</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="数据库">数据库</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-    <!-- paginator  -->
+    <!-- Mathjax -->
     
 </main>
 
@@ -933,6 +774,23 @@ full text全文索引：在定义索引的列上支持值的全文查找，允�
 
         </div>
         <!-- toc -->
+        
+            <div class="toc-wrapper toc-wrapper-loding" style=
+
+
+
+
+
+
+
+    top:50vh;
+
+>
+                <div class="toc-catalog">
+                    <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+                </div>
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A3%B9c%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9B%B8%E5%85%B3"><span class="toc-text">壹、C++、数据结构相关</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%B0%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-text">贰、操作系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%81%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C"><span class="toc-text">叁、计算机网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%82%86%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">肆、数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%8D%E7%AE%97%E6%B3%95%E5%92%8C%E5%85%B6%E4%BB%96%E7%9F%A5%E8%AF%86"><span class="toc-text">伍、算法和其他知识</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%86%E5%8F%91%E6%95%A3%E6%80%A7%E9%97%AE%E9%A2%98"><span class="toc-text">陆、发散性问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%92%E5%8F%8D%E9%97%AE%E7%8E%AF%E8%8A%82"><span class="toc-text">柒、反问环节</span></a></li></ol>
+            </div>
         
         <!-- sidebar -->
         <div class="sidebar sidebar-hide">
@@ -1190,6 +1048,8 @@ full text全文索引：在定义索引的列上支持值的全文查找，允�
         <!-- CNZZ -->
         
         <!-- async load share.js -->
+        
+            <script src="/scripts/share.js?v=20211217" async></script>
         
         <!-- mermaid -->
         
