@@ -19,12 +19,12 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta name="description" content="一、是什么 定义：确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。 因此有几个特征：  构造方法不能公开，只能是private 这个实例是当前类的实例，也就是当前类的类成员变量，用static修饰的类静态变量 需要提供一个静态方法，向外界提供当前类的实例  应用场景：  序列号生成器 web页面的计数器 如果创建一个对象需要消耗很多资源的时候，可以用单例模式来减少资源消耗  二、分">
+    <meta name="description" content="一、是什么定义：确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。 因此有几个特征：  构造方法不能公开，只能是private 这个实例是当前类的实例，也就是当前类的类成员变量，用static修饰的类静态变量 需要提供一个静态方法，向外界提供当前类的实例  应用场景：  序列号生成器 web页面的计数器 如果创建一个对象需要消耗很多资源的时候，可以用单例模式来减少资源消耗  二、分类">
 <meta property="og:type" content="article">
 <meta property="og:title" content="设计模式之单例模式">
 <meta property="og:url" content="https://doubleyue.life/2022/05/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="doubleyue的个人博客">
-<meta property="og:description" content="一、是什么 定义：确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。 因此有几个特征：  构造方法不能公开，只能是private 这个实例是当前类的实例，也就是当前类的类成员变量，用static修饰的类静态变量 需要提供一个静态方法，向外界提供当前类的实例  应用场景：  序列号生成器 web页面的计数器 如果创建一个对象需要消耗很多资源的时候，可以用单例模式来减少资源消耗  二、分">
+<meta property="og:description" content="一、是什么定义：确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。 因此有几个特征：  构造方法不能公开，只能是private 这个实例是当前类的实例，也就是当前类的类成员变量，用static修饰的类静态变量 需要提供一个静态方法，向外界提供当前类的实例  应用场景：  序列号生成器 web页面的计数器 如果创建一个对象需要消耗很多资源的时候，可以用单例模式来减少资源消耗  二、分类">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-11T06:25:10.000Z">
 <meta property="article:modified_time" content="2022-05-13T04:47:17.813Z">
@@ -497,23 +497,21 @@
             <div class="container container-unloaded">
                 <main class="main post-page">
     <article class="article-entry">
-        <h3 id="一是什么">一、是什么</h3>
-<p>定义：确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。</p>
+        <h3 id="一、是什么"><a href="#一、是什么" class="headerlink" title="一、是什么"></a>一、是什么</h3><p>定义：确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。</p>
 <p>因此有几个特征：</p>
-<ol type="1">
+<ol>
 <li>构造方法不能公开，只能是private</li>
 <li>这个实例是当前类的实例，也就是当前类的类成员变量，用static修饰的类静态变量</li>
 <li>需要提供一个静态方法，向外界提供当前类的实例</li>
 </ol>
 <p>应用场景：</p>
-<ol type="1">
+<ol>
 <li>序列号生成器</li>
 <li>web页面的计数器</li>
 <li>如果创建一个对象需要消耗很多资源的时候，可以用单例模式来减少资源消耗</li>
 </ol>
-<h3 id="二分类">二、分类</h3>
-<p>根据实例化的时机不同，可以分为饿汉式和懒汉式。</p>
-<ol type="1">
+<h3 id="二、分类"><a href="#二、分类" class="headerlink" title="二、分类"></a>二、分类</h3><p>根据实例化的时机不同，可以分为饿汉式和懒汉式。</p>
+<ol>
 <li><p>饿汉模式：在类加载的时候，立刻实例化。</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Singleton</span><span class="token punctuation">{</span>
 	<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token class-name">Singleton</span> singleton <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -522,9 +520,10 @@
   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">Singleton</span> <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">return</span> singleton<span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 <li><p>懒汉模式：</p>
-<ol type="1">
+<ol>
 <li>基础：在第一次使用的时候进行实例化。</li>
 </ol>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Singleton</span><span class="token punctuation">{</span>
@@ -537,7 +536,10 @@
     <span class="token keyword">return</span> singleton<span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ol start="2" type="1">
+
+
+
+<ol start="2">
 <li>双重检查锁：</li>
 </ol>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Singleton</span><span class="token punctuation">{</span>
@@ -553,19 +555,22 @@
     <span class="token keyword">return</span> singleton<span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <p>实例化具体步骤：</p>
 <p>① 分配内存；② 初始化对象；③ 指向刚分配的地址。</p>
 <p>但是可能发生重排序：</p>
-<p>假设 A 线程执行了①和③，B 线程过来判断为null，B就直接返回尚未实例化的instance了。使用volatile可以避免重排序。</p></li>
+<p>假设 A 线程执行了①和③，B 线程过来判断为null，B就直接返回尚未实例化的instance了。使用volatile可以避免重排序。</p>
+</li>
 </ol>
-<h3 id="三存在的问题">三、存在的问题：</h3>
-<ol type="1">
-<li>多个实例的情况
-<ol type="1">
+<h3 id="三、存在的问题："><a href="#三、存在的问题：" class="headerlink" title="三、存在的问题："></a>三、存在的问题：</h3><ol>
+<li><p>多个实例的情况</p>
+<ol>
 <li>在分布式系统中，多个JVM虚拟机，各个虚拟机都有一个实例。</li>
 <li>同一个JVM虚拟机的多个类加载器同时加载这个类，也会产生多个实例。</li>
-</ol></li>
-<li>只有一个实例，类中的变量可能会因为被修改而导致出错。因此最好以无状态的工具类提供。</li>
+</ol>
+</li>
+<li><p>只有一个实例，类中的变量可能会因为被修改而导致出错。因此最好以无状态的工具类提供。</p>
+</li>
 </ol>
 
     </article>
@@ -733,7 +738,7 @@
                 <div class="toc-catalog">
                     <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
                 </div>
-                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">一、是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E5%88%86%E7%B1%BB"><span class="toc-text">二、分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-text">三、存在的问题：</span></a></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">一、是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%88%86%E7%B1%BB"><span class="toc-text">二、分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-text">三、存在的问题：</span></a></li></ol>
             </div>
         
         <!-- sidebar -->
@@ -820,8 +825,6 @@
         
         
         
-        
-        
     
     
     
@@ -857,13 +860,13 @@
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/11</span>
-            <a class="archive-post-title" href="/2022/05/11/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99/">面向对象的六大原则</a>
+            <a class="archive-post-title" href="/2022/05/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">设计模式之单例模式</a>
         </li>
     
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/11</span>
-            <a class="archive-post-title" href="/2022/05/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">设计模式之单例模式</a>
+            <a class="archive-post-title" href="/2022/05/11/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99/">面向对象的六大原则</a>
         </li>
     
         
@@ -881,13 +884,13 @@
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/10</span>
-            <a class="archive-post-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">C++八股</a>
+            <a class="archive-post-title" href="/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">MySQL索引</a>
         </li>
     
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/10</span>
-            <a class="archive-post-title" href="/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">MySQL索引</a>
+            <a class="archive-post-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">C++八股</a>
         </li>
     
     </div>
@@ -896,24 +899,24 @@
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
         
-            <span class="sidebar-tag-name" data-tags="C++">
-                <span class="iconfont-archer">&#xe606;</span>
-                C++
-            </span>
-        
             <span class="sidebar-tag-name" data-tags="数据库">
                 <span class="iconfont-archer">&#xe606;</span>
                 数据库
             </span>
         
-            <span class="sidebar-tag-name" data-tags="计算机网络">
+            <span class="sidebar-tag-name" data-tags="C++">
                 <span class="iconfont-archer">&#xe606;</span>
-                计算机网络
+                C++
             </span>
         
             <span class="sidebar-tag-name" data-tags="设计模式">
                 <span class="iconfont-archer">&#xe606;</span>
                 设计模式
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="计算机网络">
+                <span class="iconfont-archer">&#xe606;</span>
+                计算机网络
             </span>
         
     </div>
@@ -927,14 +930,14 @@
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
-        <span class="sidebar-category-name" data-categories="知识积累">
-            <span class="iconfont-archer">&#xe60a;</span>
-            知识积累
-        </span>
-    
         <span class="sidebar-category-name" data-categories="经验分享">
             <span class="iconfont-archer">&#xe60a;</span>
             经验分享
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="知识积累">
+            <span class="iconfont-archer">&#xe60a;</span>
+            知识积累
         </span>
     
     </div>
