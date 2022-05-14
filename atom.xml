@@ -6,7 +6,7 @@
   <link href="https://doubleyue.life/atom.xml" rel="self"/>
   
   <link href="https://doubleyue.life/"/>
-  <updated>2022-05-13T04:48:31.254Z</updated>
+  <updated>2022-05-14T05:10:24.795Z</updated>
   <id>https://doubleyue.life/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通过hexo+github配置个人博客的过程</title>
+    <link href="https://doubleyue.life/2022/05/13/%E9%80%9A%E8%BF%87hexo+github%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/"/>
+    <id>https://doubleyue.life/2022/05/13/%E9%80%9A%E8%BF%87hexo+github%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/</id>
+    <published>2022-05-13T04:49:01.000Z</published>
+    <updated>2022-05-14T05:10:24.795Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="壹购买域名并设置">壹、购买域名并设置</h3><ol type="1"><li><p>注册域名就可以通过个人独特的域名访问自己的博客啦~</p><p>当然也可以不注册，不注册域名的话也可以用github.io来访问，都一样的</p></li><li><p>现在挺多平台都可以注册域名，我选择了<a href="https://wanwang.aliyun.com/domain/searchresult/#/?keyword=&amp;suffix=com">阿里云</a>，自己找个自己喜欢的域名就可以啦~我自己定了<code>doubleyue.life</code></p></li><li><p>域名配置DNS解析，如下图所示：箭头指向的地方就用github的用户名<code>xxx.github.io</code>就行</p><figure><img src="通过hexo+github配置个人博客的过程/image-20220513134905627.png" alt="image-20220513134905627"><figcaption aria-hidden="true">image-20220513134905627</figcaption></figure></li></ol><h3 id="贰安装git">贰、安装git</h3><ol type="1"><li>到<a href="https://git-scm.com/">官网</a>下载安装</li></ol><h3 id="叁创建github仓库">叁、创建GitHub仓库</h3><ol type="1"><li>在<a href="https://github.com/">github</a>创建个人博客的仓库，我的是<a href="https://github.com/TracyWang-0/doubleyue">doubleyue</a></li></ol><h3 id="肆在仓库创建pages页面并修改域名">肆、在仓库创建pages页面，并修改域名</h3><ol type="1"><li><p>在新创建的仓库的设置页面，不是个人中心的设置啊</p><figure><img src="通过hexo+github配置个人博客的过程/image-20220513140338867.png" alt="image-20220513140338867"><figcaption aria-hidden="true">image-20220513140338867</figcaption></figure></li><li><p>选择pages，然后<code>choose a theme</code>，然后就等一会儿，反应会有点慢，就出现下面的页面了！</p><p>通过上面的链接就可以访问当前仓库，如果有购买域名的话，可以把<code>3</code>那里修改成自己的域名，然后保存一下，再等会儿，就可以通过自己的域名访问这个仓库啦~</p><figure><img src="通过hexo+github配置个人博客的过程/image-20220513140629704.png" alt="image-20220513140629704"><figcaption aria-hidden="true">image-20220513140629704</figcaption></figure></li></ol><h3 id="伍关联仓库和本地主机">伍、关联仓库和本地主机</h3><ol type="1"><li><p>打开本地终端，把下面的复制到终端，修改下邮件地址</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh-keygen -t rsa -C <span class="token string">"GitHub的邮件地址"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>打开目录<code>~/.ssh</code>，找到<code>id_rsa.pub</code>文件，用文本编辑器打开，全选复制</p></li><li><p>打开GitHub的个人设置页面，选择<code>SSH and GPG keys</code>，新建一个ssh key，名称随便，把刚才复制的文本粘贴进去，保存就好</p></li><li><p>测试是否成功链接。把下面的复制到终端，<strong>啥也不用改</strong>，回车后如果出现自己的GitHub名字就说明关联成功啦~</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ssh</span> -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ol><h3 id="陆安装hexo">陆、安装hexo</h3><ol type="1"><li><p>安装node.js，到<a href="https://nodejs.org/en/download/">官网</a>下载安装</p></li><li><p>安装hexo</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g hexo<span class="token comment"># 查看版本</span>hexo -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li></ol><h3 id="柒初始化本地博客目录">柒、初始化本地博客目录</h3><ol type="1"><li><p>直接在终端输入下面的语句，<code>myblog</code>可以自己改个名字，运行完以后会生成这个文件夹</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo init myblog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ol><h3 id="捌创建一个博客并在本地测试">捌、创建一个博客并在本地测试</h3><ol type="1"><li><p>创建一个test博客，可以在<code>source/_post</code>下找到<code>test.md</code></p><pre class="line-numbers language-none"><code class="language-none">hexo new post "test"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>生成并本地测试，输入下面代码运行完以后</p><pre class="line-numbers language-none"><code class="language-none">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>打开浏览器，输入<code>localhost:4000</code>，就可以看到自己的博客了</p></li></ol><h3 id="玖部署到github仓库并打开域名查看">玖、部署到GitHub仓库并打开域名查看</h3><ol type="1"><li><p>部署到GitHub的过程会比较慢，所以我一般先本地测试正常以后，再部署。通过下面的语句就可以部署啦~</p><pre class="line-numbers language-none"><code class="language-none">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>打开自己的域名，比如我的<code>doubleyue.life</code>，就可以看到自己的博客啦~</p><p>不过部署真的很慢，要等好几分钟才能看到更新</p><p>后面如果更换主题需要配置的项目比较多，本地测试，然后直接部署就行~</p><p>之前没想到部署后这么久才能看到更新，所以一直以为自己哪里搞错了。。。</p></li></ol><h3 id="拾找个自己喜欢的主题并进行一系列的配置">拾、找个自己喜欢的主题并进行一系列的配置</h3><ol type="1"><li><p>在<a href="https://hexo.io/themes/">hexo的主题页</a>选择自己的喜欢的主题，进入相应的教程进行配置就好啦</p></li><li><p>我这里选择的是<a href="https://fi3ework.github.io/archer-demo/">archer</a>，跟着配置步骤一步步来就好啦~</p><p>这个主题现在还有人在进行维护，之前遇到了问题，咨询后很快就得到了回复，超棒！</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;壹购买域名并设置&quot;&gt;壹、购买域名并设置&lt;/h3&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;&lt;p&gt;注册域名就可以通过个人独特的域名访问自己的博客啦~&lt;/p&gt;
+&lt;p&gt;当然也可以不注册，不注册域名的话也可以用github.io来访问，都一样的&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p</summary>
+      
+    
+    
+    
+    <category term="经验分享" scheme="https://doubleyue.life/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>OSI七层模型和TCP/IP五层模型</title>
@@ -207,35 +233,6 @@
     
     
     <category term="数据库" scheme="https://doubleyue.life/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>通过hexo+github配置个人博客的过程</title>
-    <link href="https://doubleyue.life/2022/05/10/%E9%80%9A%E8%BF%87hexo+github%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/"/>
-    <id>https://doubleyue.life/2022/05/10/%E9%80%9A%E8%BF%87hexo+github%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/</id>
-    <published>2022-05-10T06:49:01.000Z</published>
-    <updated>2022-05-13T04:47:42.957Z</updated>
-    
-    <content type="html"><![CDATA[<ol type="1"><li>购买域名并设置</li><li>安装git</li><li>创建GitHub仓库</li><li>在仓库创建pages页面，并修改域名</li><li>关联仓库和本地主机</li><li>安装hexo</li><li>初始化本地博客目录</li><li>生成并在本地测试</li><li>部署到GitHub仓库并打开域名查看 -- 反应很慢</li><li>找个自己喜欢的主题并进行一系列的配置</li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;ol type=&quot;1&quot;&gt;
-&lt;li&gt;购买域名并设置&lt;/li&gt;
-&lt;li&gt;安装git&lt;/li&gt;
-&lt;li&gt;创建GitHub仓库&lt;/li&gt;
-&lt;li&gt;在仓库创建pages页面，并修改域名&lt;/li&gt;
-&lt;li&gt;关联仓库和本地主机&lt;/li&gt;
-&lt;li&gt;安装hexo&lt;/li&gt;
-&lt;li&gt;初始化本地博客</summary>
-      
-    
-    
-    
-    <category term="经验分享" scheme="https://doubleyue.life/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
-    
     
   </entry>
   
