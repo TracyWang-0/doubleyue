@@ -455,20 +455,20 @@
 这篇博客没有答案、只有问题
 答案我估计还得查几天，再慢慢总结吧~
 壹、C++、数据结构相关
+归并排序的思路，时间复杂度，空间复杂度，是否是稳定的排序算法？
+十大经典排序算法
+堆排序
+多路归并
 
-归并排序的思路，时间复杂度，空间复杂度，是否是稳定的排序算法？十大经典排序算法
+
 讲一下hashmap
-
 原理
 怎么扩容的，为什么8转换为树，为什么负载因子是0.75
 新建的hashmap初始默认大小是多少
 为什么尾插法能解决死循环
 并发安全的hashmap有那些
-
-arraylist和linkedlist的区别
-hashSet和treeSet区别
-写一个单例
-为什么用volatile，为什么要用synchronized，...
+如果我要存两个对象，假设是一个STU类，他们内部所有的值都是相同的，但是他们就不是两个相同的对象，这时候map会判定他们到同一个桶内吗？
+如...
             </div>
             <!-- read more -->
             
@@ -482,9 +482,9 @@ hashSet和treeSet区别
                     <div class= abstract-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="数据库">数据库</a>
-    
         <a class="post-tag" href="javascript:void(0);" data-tags="C++">C++</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="数据库">数据库</a>
     
         <a class="post-tag" href="javascript:void(0);" data-tags="计算机网络">计算机网络</a>
     
@@ -510,26 +510,26 @@ hashSet和treeSet区别
             </a>
             <div class="abstract-content">
                 壹、购买域名并设置
-
-注册域名就可以通过个人独特的域名访问自己的博客啦~
+注册域名就可以通过个人独特的域名访问自己的博客啦~ 
 当然也可以不注册，不注册域名的话也可以用github.io来访问，都一样的
+
 现在挺多平台都可以注册域名，我选择了阿里云，自己找个自己喜欢的域名就可以啦~我自己定了doubleyue.life
+
 域名配置DNS解析，如下图所示：箭头指向的地方就用github的用户名xxx.github.io就行
 
-image-20220513134905627
 
 
 贰、安装git
-
 到官网下载安装
 
 叁、创建GitHub仓库
-
 在github创建个人博客的仓库，我的是doubleyue
 
 肆、在仓库创建pages页面，并修改域名
+在新创建的仓库的设置页面，不是个人中心的设置啊
 
-在...
+
+...
             </div>
             <!-- read more -->
             
@@ -556,10 +556,8 @@ image-20220513134905627
                 <span class="abstract-title-text">OSI七层模型和TCP/IP五层模型</span>
             </a>
             <div class="abstract-content">
-                一、OSI七层模型
-从下到上依次为：① 物理层、② 数据链路层、③ 传输层、④ 网络层、 ⑤ 应用层、⑥ 会话层、 ⑦ 表示层
-二、TCP/IP五层模型
-从OSI七层模型发展而来，从下到上依次为：① 物理层、② 数据链路层、③ 传输层、④ 网络层、 ⑤ 应用层
+                一、OSI七层模型从下到上依次为：① 物理层、② 数据链路层、③ 传输层、④ 网络层、 ⑤ 应用层、⑥ 会话层、 ⑦ 表示层
+二、TCP/IP五层模型从OSI七层模型发展而来，从下到上依次为：① 物理层、② 数据链路层、③ 传输层、④ 网络层、 ⑤ 应用层
 
             </div>
             <!-- read more -->
@@ -595,14 +593,10 @@ image-20220513134905627
                 <span class="abstract-title-text">面向对象的六大原则</span>
             </a>
             <div class="abstract-content">
-                一、单一职责原则
-每个模块/类都应该对软件提供的功能的一部分负责，而这个责任应该完全由类来封装。
-二、开闭原则
-软件中的对象(类、模块、函数等)对扩展是开放的，对修改是封闭的。 当然，这只是理想化的愿景，在实际开发中，修改原有代码、扩展代码往往是同时存在的。 已存在的实现类对于修改是封闭的，新的实现类可以通过覆写父类的接口应对变化。
-三、里氏替换原则
-所有使用基类的地方必须能透明地使用其子类的对象
-四、依赖倒转原则
-是指一种特定的解耦（传统的依赖关系建立在高层次上，而具体的策略设置则应用在低层次的模块上）形式，使得高层次的模块不依赖于低层次的模块的实现细节，依赖关系被颠倒（反转），从而使...
+                一、单一职责原则每个模块/类都应该对软件提供的功能的一部分负责，而这个责任应该完全由类来封装。
+二、开闭原则软件中的对象(类、模块、函数等)对扩展是开放的，对修改是封闭的。当然，这只是理想化的愿景，在实际开发中，修改原有代码、扩展代码往往是同时存在的。已存在的实现类对于修改是封闭的，新的实现类可以通过覆写父类的接口应对变化。
+三、里氏替换原则所有使用基类的地方必须能透明地使用其子类的对象
+四、依赖倒转原则是指一种特定的解耦（传统的依赖关系建立在高层次上，而具体的策略设置则应用在低层次的模块上）形式，使得高层次的模块不依赖于低层次的模块的实现细节，依赖关系被颠倒（反转），从而使得低层次模块...
             </div>
             <!-- read more -->
             
@@ -637,8 +631,7 @@ image-20220513134905627
                 <span class="abstract-title-text">设计模式之单例模式</span>
             </a>
             <div class="abstract-content">
-                一、是什么
-定义：确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。
+                一、是什么定义：确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。
 因此有几个特征：
 
 构造方法不能公开，只能是private
@@ -651,12 +644,11 @@ image-20220513134905627
 web页面的计数器
 如果创建一个对象需要消耗很多资源的时候，可以用单例模式来减少资源消耗
 
-二、分类
-根据实例化的时机不同，可以分为饿汉式和懒汉式。
+二、分类根据实例化的时机不同，可以分为饿汉式和懒汉式。
 
 饿汉模式：在类加载的时候，立刻实例化。
 class Singleton{
-	private static Singleton singlet...
+	private static Singleton singleton...
             </div>
             <!-- read more -->
             
@@ -691,16 +683,15 @@ class Singleton{
                 <span class="abstract-title-text">设计模式之工厂模式</span>
             </a>
             <div class="abstract-content">
-                一、简单工厂模式Simple Factory Pattern
-又称静态工厂方法Static Factory Method，属于创建型模式。
+                一、简单工厂模式Simple Factory Pattern又称静态工厂方法Static Factory Method，属于创建型模式。
 根据参数的不同返回不同类的实例。
 简单工厂模式专门创建一个类来创建其他类的实例，被创建的实例通常具有共同的父类。类图如下：
 
+
 优点：将对象的创建和使用分离，把创建产品的过程交给专门的工厂类负责，客户端不用管具体是如何实现的
 缺点：不够灵活，新增一个产品就需要修改工厂类，在工厂中加入必要的业务逻辑，违反了开闭原则。
-二、工厂模式
-定义一个用于创建对象的接口，让子类决定实例化哪个类。工厂方法使一个类的实例化延迟到其子类。也就是说：
-把核心工厂变成一个抽象...
+二、工厂模式定义一个用于创建对象的接口，让子类决定实例化哪个类。工厂方法使一个类的实例化延迟到其子类。也就是说：
+把核心工厂变成一个抽象接...
             </div>
             <!-- read more -->
             
@@ -739,19 +730,19 @@ class Singleton{
 
 投递简历：
 
-在有个实习群里加到以为hr，说有hc，于是投递了通用软件开发工程师的岗位，可以投两个意向。（但是第二个意向其实是不起作用的。
+ 在有个实习群里加到以为hr，说有hc，于是投递了通用软件开发工程师的岗位，可以投两个意向。（但是第二个意向其实是不起作用的。
 
 笔试：
 
-第二周的周二收到周三晚上笔试的邮件，共3道题（分值100,200,300），达到100分就有面试机会。比较麻烦的点在于输入输出，需要从字符串解析出需要读取的数字，输出也是需要把数组转成串输出。
+ 第二周的周二收到周三晚上笔试的邮件，共3道题（分值100,200,300），达到100分就有面试机会。比较麻烦的点在于输入输出，需要从字符串解析出需要读取的数字，输出也是需要把数组转成串输出。
 
 综合测评：
 
-一周内收到邮件参加综合测评和面试，问了hr说是性格测试，约35min可以完成。有同学表示这个测试不过的话，可以再次参加一次。
+ 一周内收到邮件参加综合测评和面试，问了hr说是性格测试，约35min可以完成。有同学表示这个测试不过的话，可以再次参加一次。
 
 技术面：
 
-同综合测评一起发...
+ 同综合测...
             </div>
             <!-- read more -->
             
@@ -779,18 +770,15 @@ class Singleton{
             </a>
             <div class="abstract-content">
                 一、C++和C的区别
-
 面向过程和面向对象的区别
 关键字不一样
 
 二、几个关键字
-
 volatile
 final
 const
 
 三、三个特性
-
 封装
 继承
 多态
@@ -831,23 +819,20 @@ const
             </a>
             <div class="abstract-content">
                 一、什么是index
-
 帮助MySQL提高查询效率的数据结构
 优点：大大加快数据查询速度
 缺点：①维护索引需要耗费数据库资源；②占用磁盘空间；③对表的数据进行增删改的时候需要维护索引，速度会受到影响。
 
 二、索引分类
-
 innoDB
-
 主键索引：设置为主键的时候，innodb为聚簇索引，不允许有空值
 单值索引/单列索引/普通索引：一个索引只包含单个列，一个表可以有多个单列索引
 唯一索引：索引列的值必须唯一，允许有空值，但是只能有一个null
 复合索引：一个索引包含多个列
 
-myISAM（不需要背）
 
-full text全文索引：在定义索引的列上支持值的全文查找，允许空值、重复值，只能在文...
+myISAM（不需要背）
+full text全文索引：在定义索引的列上支持值的全文查找，允许空值、重复值，只能在文本类型...
             </div>
             <!-- read more -->
             
@@ -1153,6 +1138,8 @@ full text全文索引：在定义索引的列上支持值的全文查找，允�
         
         
         
+        
+        
     
     
     
@@ -1218,13 +1205,13 @@ full text全文索引：在定义索引的列上支持值的全文查找，允�
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/10</span>
-            <a class="archive-post-title" href="/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">MySQL索引</a>
+            <a class="archive-post-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">C++八股</a>
         </li>
     
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/10</span>
-            <a class="archive-post-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">C++八股</a>
+            <a class="archive-post-title" href="/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">MySQL索引</a>
         </li>
     
     </div>
@@ -1233,14 +1220,14 @@ full text全文索引：在定义索引的列上支持值的全文查找，允�
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
         
-            <span class="sidebar-tag-name" data-tags="数据库">
-                <span class="iconfont-archer">&#xe606;</span>
-                数据库
-            </span>
-        
             <span class="sidebar-tag-name" data-tags="C++">
                 <span class="iconfont-archer">&#xe606;</span>
                 C++
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="数据库">
+                <span class="iconfont-archer">&#xe606;</span>
+                数据库
             </span>
         
             <span class="sidebar-tag-name" data-tags="计算机网络">
@@ -1248,14 +1235,14 @@ full text全文索引：在定义索引的列上支持值的全文查找，允�
                 计算机网络
             </span>
         
-            <span class="sidebar-tag-name" data-tags="操作系统">
-                <span class="iconfont-archer">&#xe606;</span>
-                操作系统
-            </span>
-        
             <span class="sidebar-tag-name" data-tags="设计模式">
                 <span class="iconfont-archer">&#xe606;</span>
                 设计模式
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="操作系统">
+                <span class="iconfont-archer">&#xe606;</span>
+                操作系统
             </span>
         
     </div>
@@ -1269,14 +1256,14 @@ full text全文索引：在定义索引的列上支持值的全文查找，允�
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
-        <span class="sidebar-category-name" data-categories="经验分享">
-            <span class="iconfont-archer">&#xe60a;</span>
-            经验分享
-        </span>
-    
         <span class="sidebar-category-name" data-categories="知识积累">
             <span class="iconfont-archer">&#xe60a;</span>
             知识积累
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="经验分享">
+            <span class="iconfont-archer">&#xe60a;</span>
+            经验分享
         </span>
     
         <span class="sidebar-category-name" data-categories="面试相关">
