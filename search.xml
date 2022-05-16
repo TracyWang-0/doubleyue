@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>异或、同或运算</title>
+      <link href="/2022/05/16/%E5%BC%82%E6%88%96%E3%80%81%E5%90%8C%E6%88%96%E8%BF%90%E7%AE%97/"/>
+      <url>/2022/05/16/%E5%BC%82%E6%88%96%E3%80%81%E5%90%8C%E6%88%96%E8%BF%90%E7%AE%97/</url>
+      
+        <content type="html"><![CDATA[<h2 id="壹异或运算">壹、异或运算</h2><ol type="1"><li>符号：⊕、XOR、EOR、EX-OR</li><li>规则：同为0，异为1</li><li>公式：a ⊕ b = (¬a ∧ b) ∨ (a ∧¬b)</li><li>举例：<ol type="1"><li>同为0：0 ⊕ 0 = 1 ⊕ 1 = 0</li><li>异为1：0 ⊕ 1 = 1 ⊕ 0 = 1</li></ol></li></ol><h2 id="贰同或运算">贰、同或运算</h2><ol type="1"><li>符号： ⊙</li><li>规则：同为1，异为0</li><li>公式：a ⊙ b = ab + ¬a¬b</li><li>举例：<ol type="1"><li>同为1：0 ⊕ 0 = 1 ⊕ 1 = 1</li><li>异为0：0 ⊕ 1 = 1 ⊕ 0 = 0</li></ol></li></ol><hr><blockquote><p>几个逻辑符号介绍：</p><ol type="1"><li>与∧：a ∧ b，a和b都为真，结果为真；否则结果为假。</li><li>或∨：a ∨ b，a和b都为假，结果为假；否则结果为真。</li><li>非¬：¬a，若a为真，结果为假；若a为假，结果为真。</li></ol></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 知识积累 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>字节面试的问题准备</title>
       <link href="/2022/05/14/%E5%AD%97%E8%8A%82%E9%9D%A2%E8%AF%95%E7%9A%84%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87/"/>
       <url>/2022/05/14/%E5%AD%97%E8%8A%82%E9%9D%A2%E8%AF%95%E7%9A%84%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87/</url>
@@ -22,9 +47,9 @@
             
             <tag> C++ </tag>
             
-            <tag> 计算机网络 </tag>
-            
             <tag> 数据库 </tag>
+            
+            <tag> 计算机网络 </tag>
             
             <tag> 操作系统 </tag>
             
