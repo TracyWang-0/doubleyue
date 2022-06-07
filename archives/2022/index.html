@@ -431,6 +431,129 @@
             
         
         <article class="index-post">
+            <a class="abstract-title" href="/2022/06/07/pycharm%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9B%E8%A1%8C%E8%B0%83%E8%AF%95/">
+                
+                <span class="abstract-title-text">pycharm连接远程服务器进行调试</span>
+            </a>
+            <div class="abstract-content">
+                壹、获取远程服务器的ip地址
+sudo apt install net-tools
+ifconfig -a
+
+image-20220607201928201
+
+贰、本地打开
+
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/06/07">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/06/07</span>
+                </div>
+                <!-- tags -->
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
+            <a class="abstract-title" href="/2022/06/07/ubuntu%E9%81%87%E5%88%B0Sub-process-usr-bin-dpkg-returned-an-error-code-1-%E7%9A%84%E8%A7%A3%E5%86%B3/">
+                
+                <span class="abstract-title-text">ubuntu遇到Sub-process /usr/bin/dpkg returned an error code (1)的解决</span>
+            </a>
+            <div class="abstract-content">
+                因为安装deb文件出现错误~
+导致后续装软件的时候总是报个错误，也装不好
+找了个教程，试了下，解决还挺容易的
+执行了下面几条命令，就好啦~
+sudo apt-get remove --purge package_name(qbittorrent)
+sudo apt autoremove
+sudo dpkg --configure -a
+参考来源：
+解决 dpkg 安装出错后的 Sub-process /usr/bin/dpkg returned an error code (1) 错误
+
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/06/07">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/06/07</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Bug">Bug</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
+            <a class="abstract-title" href="/2022/06/02/Mac%E6%8A%A5%E9%94%99%EF%BC%9A%E6%AD%A4%E7%94%B5%E8%84%91%E4%B8%8D%E8%83%BD%E8%AF%BB%E5%8F%96%E6%82%A8%E8%BF%9E%E6%8E%A5%E7%9A%84%E7%A3%81%E7%9B%98/">
+                
+                <span class="abstract-title-text">Mac报错：此电脑不能读取您连接的磁盘</span>
+            </a>
+            <div class="abstract-content">
+                壹、报错如下
+此电脑不能读取您连接的磁盘。
+
+
+贰、尝试解决
+
+重置mac的SMC ---&gt; 达咩
+windos对优盘进行各种格式的格式化 ---&gt; 插入mac后格式化 ---&gt; 达咩
+linux对优盘格式化以后 ---&gt; 插入mac后格式化 ---&gt; 搞定！
+
+
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/06/07">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/06/02</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="mac">mac</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
             <a class="abstract-title" href="/2022/05/20/%E5%B0%8F%E5%B0%8F%E6%84%9F%E5%8A%A8/">
                 
                 <span class="abstract-title-text">小小感动</span>
@@ -578,9 +701,9 @@
     
         <a class="post-tag" href="javascript:void(0);" data-tags="C++">C++</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="计算机网络">计算机网络</a>
-    
         <a class="post-tag" href="javascript:void(0);" data-tags="数据库">数据库</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="计算机网络">计算机网络</a>
     
         <a class="post-tag" href="javascript:void(0);" data-tags="操作系统">操作系统</a>
     
@@ -860,111 +983,11 @@ class Singleton{
         </article>
         <div class="index-post-divider"></div>
     
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/10/Cplusplus%E5%85%AB%E8%82%A1/">
-                
-                <span class="abstract-title-text">C++八股</span>
-            </a>
-            <div class="abstract-content">
-                一、C++和C的区别
-
-面向过程和面向对象的区别
-关键字不一样
-
-二、几个关键字
-
-volatile
-final
-const
-
-三、三个特性
-
-封装
-继承
-多态
-
-
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/10</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="C++">C++</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">
-                
-                <span class="abstract-title-text">MySQL索引</span>
-            </a>
-            <div class="abstract-content">
-                一、什么是index
-
-帮助MySQL提高查询效率的数据结构
-优点：大大加快数据查询速度
-缺点：①维护索引需要耗费数据库资源；②占用磁盘空间；③对表的数据进行增删改的时候需要维护索引，速度会受到影响。
-
-二、索引分类
-
-innoDB
-
-主键索引：设置为主键的时候，innodb为聚簇索引，不允许有空值
-单值索引/单列索引/普通索引：一个索引只包含单个列，一个表可以有多个单列索引
-唯一索引：索引列的值必须唯一，允许有空值，但是只能有一个null
-复合索引：一个索引包含多个列
-
-myISAM（不需要背）
-
-full text全文索引：在定义索引的列上支持值的全文查找，允许空值、重复值，只能在文...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/10</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="数据库">数据库</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
     <!-- paginator  -->
+    
+        <nav class="page-nav">
+            <span class="page-number current">1</span><a class="page-number" href="/archives/2022/page/2/">2</a><a class="extend next" rel="next" href="/archives/2022/page/2/">NEXT &gt;</a>
+        </nav>
     
 </main>
 
@@ -1126,7 +1149,46 @@ full text全文索引：在定义索引的列上支持值的全文查找，允�
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -1187,7 +1249,7 @@ full text全文索引：在定义索引的列上支持值的全文查找，允�
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 11
+        Total : 14
         </div>
         <!-- search  -->
         
@@ -1201,6 +1263,24 @@ full text全文索引：在定义索引的列上支持值的全文查找，允�
             <div class="archive-year"> 2022 </div>
             <ul class="year-list">
             
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/07</span>
+            <a class="archive-post-title" href="/2022/06/07/pycharm%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9B%E8%A1%8C%E8%B0%83%E8%AF%95/">pycharm连接远程服务器进行调试</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/07</span>
+            <a class="archive-post-title" href="/2022/06/07/ubuntu%E9%81%87%E5%88%B0Sub-process-usr-bin-dpkg-returned-an-error-code-1-%E7%9A%84%E8%A7%A3%E5%86%B3/">ubuntu遇到Sub-process /usr/bin/dpkg returned an error code (1)的解决</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/02</span>
+            <a class="archive-post-title" href="/2022/06/02/Mac%E6%8A%A5%E9%94%99%EF%BC%9A%E6%AD%A4%E7%94%B5%E8%84%91%E4%B8%8D%E8%83%BD%E8%AF%BB%E5%8F%96%E6%82%A8%E8%BF%9E%E6%8E%A5%E7%9A%84%E7%A3%81%E7%9B%98/">Mac报错：此电脑不能读取您连接的磁盘</a>
+        </li>
+    
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/20</span>
@@ -1278,24 +1358,34 @@ full text全文索引：在定义索引的列上支持值的全文查找，允�
                 C++
             </span>
         
-            <span class="sidebar-tag-name" data-tags="计算机网络">
-                <span class="iconfont-archer">&#xe606;</span>
-                计算机网络
-            </span>
-        
             <span class="sidebar-tag-name" data-tags="数据库">
                 <span class="iconfont-archer">&#xe606;</span>
                 数据库
             </span>
         
-            <span class="sidebar-tag-name" data-tags="数学">
+            <span class="sidebar-tag-name" data-tags="计算机网络">
                 <span class="iconfont-archer">&#xe606;</span>
-                数学
+                计算机网络
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="mac">
+                <span class="iconfont-archer">&#xe606;</span>
+                mac
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="Bug">
+                <span class="iconfont-archer">&#xe606;</span>
+                Bug
             </span>
         
             <span class="sidebar-tag-name" data-tags="设计模式">
                 <span class="iconfont-archer">&#xe606;</span>
                 设计模式
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="数学">
+                <span class="iconfont-archer">&#xe606;</span>
+                数学
             </span>
         
             <span class="sidebar-tag-name" data-tags="操作系统">

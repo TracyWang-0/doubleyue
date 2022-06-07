@@ -4,6 +4,69 @@
   
     
     <entry>
+      <title>pycharm连接远程服务器进行调试</title>
+      <link href="/2022/06/07/pycharm%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9B%E8%A1%8C%E8%B0%83%E8%AF%95/"/>
+      <url>/2022/06/07/pycharm%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9B%E8%A1%8C%E8%B0%83%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h3 id="壹获取远程服务器的ip地址">壹、获取远程服务器的ip地址</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> net-tools<span class="token function">ifconfig</span> -a<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><figure><img src="pycharm连接远程服务器进行调试/image-20220607201928201.png" alt="image-20220607201928201"><figcaption aria-hidden="true">image-20220607201928201</figcaption></figure><h3 id="贰本地打开">贰、本地打开</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 经验分享 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ubuntu遇到Sub-process /usr/bin/dpkg returned an error code (1)的解决</title>
+      <link href="/2022/06/07/ubuntu%E9%81%87%E5%88%B0Sub-process-usr-bin-dpkg-returned-an-error-code-1-%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
+      <url>/2022/06/07/ubuntu%E9%81%87%E5%88%B0Sub-process-usr-bin-dpkg-returned-an-error-code-1-%E7%9A%84%E8%A7%A3%E5%86%B3/</url>
+      
+        <content type="html"><![CDATA[<p>因为安装deb文件出现错误~</p><p>导致后续装软件的时候总是报个错误，也装不好</p><p>找了个教程，试了下，解决还挺容易的</p><p>执行了下面几条命令，就好啦~</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> remove --purge package_name<span class="token punctuation">(</span>qbittorrent<span class="token punctuation">)</span><span class="token function">sudo</span> <span class="token function">apt</span> autoremove<span class="token function">sudo</span> dpkg --configure -a<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>参考来源：</p><p><a href="https://blog.csdn.net/u013832707/article/details/113104006">解决 dpkg 安装出错后的 Sub-process /usr/bin/dpkg returned an error code (1) 错误</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 经验分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bug </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mac报错：此电脑不能读取您连接的磁盘</title>
+      <link href="/2022/06/02/Mac%E6%8A%A5%E9%94%99%EF%BC%9A%E6%AD%A4%E7%94%B5%E8%84%91%E4%B8%8D%E8%83%BD%E8%AF%BB%E5%8F%96%E6%82%A8%E8%BF%9E%E6%8E%A5%E7%9A%84%E7%A3%81%E7%9B%98/"/>
+      <url>/2022/06/02/Mac%E6%8A%A5%E9%94%99%EF%BC%9A%E6%AD%A4%E7%94%B5%E8%84%91%E4%B8%8D%E8%83%BD%E8%AF%BB%E5%8F%96%E6%82%A8%E8%BF%9E%E6%8E%A5%E7%9A%84%E7%A3%81%E7%9B%98/</url>
+      
+        <content type="html"><![CDATA[<h3 id="壹报错如下">壹、报错如下</h3><p>此电脑不能读取您连接的磁盘。</p><p><img src="Mac报错：此电脑不能读取您连接的磁盘/image-20220602191700285.png" alt="image-20220602191700285" style="zoom:50%;"></p><p><img src="Mac报错：此电脑不能读取您连接的磁盘/image-20220602191748129.png" alt="image-20220602191748129" style="zoom:40%;"></p><h3 id="贰尝试解决">贰、尝试解决</h3><ol type="1"><li>重置mac的SMC ---&gt; 达咩</li><li>windos对优盘进行各种格式的格式化 ---&gt; 插入mac后格式化 ---&gt; 达咩</li><li>linux对优盘格式化以后 ---&gt; 插入mac后格式化 ---&gt; 搞定！</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> mac </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小小感动</title>
       <link href="/2022/05/20/%E5%B0%8F%E5%B0%8F%E6%84%9F%E5%8A%A8/"/>
       <url>/2022/05/20/%E5%B0%8F%E5%B0%8F%E6%84%9F%E5%8A%A8/</url>
@@ -66,9 +129,9 @@
             
             <tag> C++ </tag>
             
-            <tag> 计算机网络 </tag>
-            
             <tag> 数据库 </tag>
+            
+            <tag> 计算机网络 </tag>
             
             <tag> 操作系统 </tag>
             
