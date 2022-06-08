@@ -6,7 +6,7 @@
   <link href="https://doubleyue.life/atom.xml" rel="self"/>
   
   <link href="https://doubleyue.life/"/>
-  <updated>2022-06-07T12:19:31.944Z</updated>
+  <updated>2022-06-07T12:20:14.414Z</updated>
   <id>https://doubleyue.life/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://doubleyue.life/2022/06/07/pycharm%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9B%E8%A1%8C%E8%B0%83%E8%AF%95/"/>
     <id>https://doubleyue.life/2022/06/07/pycharm%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9B%E8%A1%8C%E8%B0%83%E8%AF%95/</id>
     <published>2022-06-07T11:57:50.000Z</published>
-    <updated>2022-06-07T12:19:31.944Z</updated>
+    <updated>2022-06-07T12:20:14.414Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="壹获取远程服务器的ip地址">壹、获取远程服务器的ip地址</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> net-tools<span class="token function">ifconfig</span> -a<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><figure><img src="pycharm连接远程服务器进行调试/image-20220607201928201.png" alt="image-20220607201928201"><figcaption aria-hidden="true">image-20220607201928201</figcaption></figure><h3 id="贰本地打开">贰、本地打开</h3>]]></content>
+    <content type="html"><![CDATA[<h3 id="壹获取远程服务器的ip地址">壹、获取远程服务器的ip地址</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> net-tools<span class="token function">ifconfig</span> -a<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><figure><img src="pycharm连接远程服务器进行调试/image-20220607201928201.png" alt="image-20220607201928201"><figcaption aria-hidden="true">image-20220607201928201</figcaption></figure><h3 id="贰本地打开pycharm">贰、本地打开pycharm</h3>]]></content>
     
     
       
