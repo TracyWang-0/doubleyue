@@ -21,7 +21,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="doubleyue的个人博客">
-<meta property="og:url" content="https://doubleyue.life/tags/%E6%95%B0%E5%AD%A6/index.html">
+<meta property="og:url" content="https://doubleyue.life/tags/python/index.html">
 <meta property="og:site_name" content="doubleyue的个人博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="doubleyue">
@@ -431,54 +431,32 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2022/05/16/%E5%BC%82%E6%88%96%E3%80%81%E5%90%8C%E6%88%96%E8%BF%90%E7%AE%97/">
+            <a class="abstract-title" href="/2022/06/21/python%E8%AF%BB%E5%8F%96txt/">
                 
-                <span class="abstract-title-text">异或、同或运算</span>
+                <span class="abstract-title-text">python读取txt</span>
             </a>
             <div class="abstract-content">
-                壹、异或运算
+                import os
 
-符号：⊕、XOR、EOR、EX-OR
-规则：同为0，异为1
-公式：a ⊕ b = (¬a ∧ b) ∨ (a ∧¬b)
-举例：
+path = 'aaa.txt'
+with open(path, 'r') as f:
+  aaa = f.readlines()
+  f.close()s
 
-同为0：0 ⊕ 0 = 1 ⊕ 1 = 0
-异为1：0 ⊕ 1 = 1 ⊕ 0 = 1
-
-
-贰、同或运算
-
-符号： ⊙
-规则：同为1，异为0
-公式：a ⊙ b = ab + ¬a¬b
-举例：
-
-同为1：0 ⊕ 0 = 1 ⊕ 1 = 1
-异为0：0 ⊕ 1 = 1 ⊕ 0 = 0
-
-
-
-
-几个逻辑符号介绍：
-
-与∧：a ∧ b，a和b都为真，结果为真；否则结果为假。
-或∨：a ∨ b，a和b都为假，结果为假；否则结果为真。
-非¬：¬a，若a为真...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/16">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/16</span>
+                <div class="abstract-date" title="Last updated: 2022/07/11">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/06/21</span>
                 </div>
                 <!-- tags -->
                 
                     <div class= abstract-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="数学">数学</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="python">python</a>
     
 </div>
 

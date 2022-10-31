@@ -21,7 +21,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="doubleyue的个人博客">
-<meta property="og:url" content="https://doubleyue.life/tags/%E6%95%B0%E5%AD%A6/index.html">
+<meta property="og:url" content="https://doubleyue.life/page/2/index.html">
 <meta property="og:site_name" content="doubleyue的个人博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="doubleyue">
@@ -220,8 +220,10 @@
         }
     </script>
     
+        <body class="home-body">
+    
         <!-- header -->
-        <header class="header header-mobile">
+        <header class="header header-mobile index-header">
     <!-- top read progress line -->
     <div class="header-element">
         <div class="read-progress"></div>
@@ -252,7 +254,7 @@
 </header>
 
         <!-- fixed footer -->
-        <footer class="footer-fixed">
+        <footer class="footer-fixed index-footer-fixed">
     <!-- back to top button -->
     <div class="footer-fixed-element">
         
@@ -275,21 +277,34 @@
 
 
 
+    height:50vh;
+
 ">
     
     <!-- 主页  -->
+    
+        
+    <!-- 文章页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/%E5%A4%A9%E7%A9%BA%E4%B8%AD%E7%9A%84%E9%B2%A8%E9%B1%BC.jpeg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
+                Doubleyue's Life
+            <!-- 文章页  -->
+            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
+            
+                
+                    你还有时间去成为任何你想成为的人！
+                
+            <!-- 文章页  -->
             
         </p>
         <!-- 文章页 meta -->
@@ -431,54 +446,43 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2022/05/16/%E5%BC%82%E6%88%96%E3%80%81%E5%90%8C%E6%88%96%E8%BF%90%E7%AE%97/">
+            <a class="abstract-title" href="/2022/05/10/MySQL%E7%B4%A2%E5%BC%95/">
                 
-                <span class="abstract-title-text">异或、同或运算</span>
+                <span class="abstract-title-text">MySQL索引</span>
             </a>
             <div class="abstract-content">
-                壹、异或运算
+                一、什么是index
 
-符号：⊕、XOR、EOR、EX-OR
-规则：同为0，异为1
-公式：a ⊕ b = (¬a ∧ b) ∨ (a ∧¬b)
-举例：
+帮助MySQL提高查询效率的数据结构
+优点：大大加快数据查询速度
+缺点：①维护索引需要耗费数据库资源；②占用磁盘空间；③对表的数据进行增删改的时候需要维护索引，速度会受到影响。
 
-同为0：0 ⊕ 0 = 1 ⊕ 1 = 0
-异为1：0 ⊕ 1 = 1 ⊕ 0 = 1
+二、索引分类
 
+innoDB
 
-贰、同或运算
+主键索引：设置为主键的时候，innodb为聚簇索引，不允许有空值
+单值索引/单列索引/普通索引：一个索引只包含单个列，一个表可以有多个单列索引
+唯一索引：索引列的值必须唯一，允许有空值，但是只能有一个null
+复合索引：一个索引包含多个列
 
-符号： ⊙
-规则：同为1，异为0
-公式：a ⊙ b = ab + ¬a¬b
-举例：
+myISAM（不需要背）
 
-同为1：0 ⊕ 0 = 1 ⊕ 1 = 1
-异为0：0 ⊕ 1 = 1 ⊕ 0 = 0
-
-
-
-
-几个逻辑符号介绍：
-
-与∧：a ∧ b，a和b都为真，结果为真；否则结果为假。
-或∨：a ∨ b，a和b都为假，结果为假；否则结果为真。
-非¬：¬a，若a为真...
+full text全文索引：在定义索引的列上支持值的全文查找，允许空值、重复值，只能在文...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/05/16">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/16</span>
+                <div class="abstract-date" title="Last updated: 2022/05/13">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/10</span>
                 </div>
                 <!-- tags -->
                 
                     <div class= abstract-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="数学">数学</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="数据库">数据库</a>
     
 </div>
 
@@ -489,9 +493,102 @@
     
     <!-- paginator  -->
     
+        <nav class="page-nav">
+            <a class="extend prev" rel="prev" href="/">&lt; PREV</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+        </nav>
+    
 </main>
 
                 <!-- profile -->
+                
+                    <div class="profile">
+    <img class="profile-avatar" alt="avatar" src= /avatar/doubleyue.png />
+    <div class="profile-name">doubleyue</div>
+    
+        <div class="profile-signature">
+            contact me
+        </div>
+    
+    
+        <div class="profile-social">
+            
+    
+        
+            
+                <a href="mailto:hellotracyw@163.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/TracyWang-0" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                    
+                    <img class="profile-qr" src="/assets/doubleyue_qr.jpeg" />
+                </span>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="/atom.xml" class="iconfont-archer rss" target="_blank" title=rss></a>
+            
+        
+    
+
+
+        </div>
+    
+    
+    
+        <div class="profile-link-item">
+            <a href="/about" class="about-me">
+                
+                ABOUT ME
+            </a>
+        </div>
+    
+    
+    
+</div>
+
                 
             </div>
             <footer class="footer footer-unloaded">

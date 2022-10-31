@@ -6,7 +6,7 @@
   <link href="https://doubleyue.life/atom.xml" rel="self"/>
   
   <link href="https://doubleyue.life/"/>
-  <updated>2022-06-07T11:57:07.378Z</updated>
+  <updated>2022-10-31T10:37:53.660Z</updated>
   <id>https://doubleyue.life/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>已注册kindle退出demo模式</title>
+    <link href="https://doubleyue.life/2022/10/31/%E5%B7%B2%E6%B3%A8%E5%86%8Ckindle%E9%80%80%E5%87%BAdemo%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://doubleyue.life/2022/10/31/%E5%B7%B2%E6%B3%A8%E5%86%8Ckindle%E9%80%80%E5%87%BAdemo%E6%A8%A1%E5%BC%8F/</id>
+    <published>2022-10-31T09:50:01.000Z</published>
+    <updated>2022-10-31T10:37:53.660Z</updated>
+    
+    <content type="html"><![CDATA[<p>这不是想着kindle要退出中国市场了，想着干脆越狱以后装个微信读书罢了，结果我搞到一半发现我kindle的固件已经升级到最新版了，目前没有对应的越狱文件！</p><p>没办法，只能回退重置了，嘤嘤嘤</p><p>但是<code>Reset</code>是灰色的，看来没办法直接重置了。。。怎么解决呢，继续往下看</p><p><img src="已注册kindle退出demo模式/image-20221031175708127.png" alt="reset为灰色" style="zoom:67%;"></p><h3 id="如果注册了的话先在amazon官方注销设备">〇、如果注册了的话，先在amazon官方注销设备</h3><p>注意！如果已经在当前kindle登录了自己的账号的话，需要先在官网注销当前kindle设备才可以继续下面的步骤</p><p>在<a href="https://www.amazon.cn/hz/mycd/digital-console/alldevices">管理我的内容和设备</a>中，找到kindle并注销设备</p><p>稍微等一会儿，kindle这边就自动取消注册了（注册过说明这个时候kindle已经联网了，不要把网络断开）</p><h3 id="壹在kindle的搜索框中输入demo">壹、在kindle的搜索框中输入<code>；demo</code></h3><p>如果是已经注册过的设备，应该会出现以下步骤，以下步骤结束</p><ol type="1"><li><p>进入到<code>Demo Activation</code>，选择<code>Yes</code>，会重启设备，等ing</p></li><li><p>开机后选择语言：English --&gt; the United Kindom，继续等ing</p></li><li><p>配置wifi</p></li><li><p>进入到<code>Register This Demo</code>，随便填就行，然后继续选择skip、Standard、DONE，继续等ing</p></li><li><p>进入到<code>CONFIGURE DEVICE</code>，有个特殊手势退出这个页面</p></li><li><p>双击一下屏幕右下角，紧接着一根指头从右向左滑一下，多试几次，总能退出的</p></li><li><p>退出以后重新在kindle的搜索框中输入<code>；demo</code>，会出现好多选项，如下图所示：</p><p><img src="已注册kindle退出demo模式/image-20221031183724686.png" alt="Demo Menu" style="zoom:50%;"></p></li></ol><h3 id="贰选resell-device">贰、选resell device</h3><p>然后我因为电量低需要充电才能继续，提示如下，在充电ing</p><p><img src="已注册kindle退出demo模式/image-20221031183600794.png" alt="需要充电的提示" style="zoom:50%;"></p><p>也可能会因为电量太足而需要放电</p><p>我这边充电完成后就自动重启了</p><h3 id="参考来源">参考来源：</h3><p><a href="https://water-is.me/index.php/2022/05/31/188.html">Kindle退出演示模式的方法</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这不是想着kindle要退出中国市场了，想着干脆越狱以后装个微信读书罢了，结果我搞到一半发现我kindle的固件已经升级到最新版了，目前没有对应的越狱文件！&lt;/p&gt;
+&lt;p&gt;没办法，只能回退重置了，嘤嘤嘤&lt;/p&gt;
+&lt;p&gt;但是&lt;code&gt;Reset&lt;/code&gt;是灰色的，看来没</summary>
+      
+    
+    
+    
+    
+    <category term="kindle" scheme="https://doubleyue.life/tags/kindle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>华为实习经历</title>
+    <link href="https://doubleyue.life/2022/09/29/%E5%8D%8E%E4%B8%BA%E5%AE%9E%E4%B9%A0%E7%BB%8F%E5%8E%86/"/>
+    <id>https://doubleyue.life/2022/09/29/%E5%8D%8E%E4%B8%BA%E5%AE%9E%E4%B9%A0%E7%BB%8F%E5%8E%86/</id>
+    <published>2022-09-29T13:29:01.000Z</published>
+    <updated>2022-09-29T13:29:01.620Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python读取txt</title>
+    <link href="https://doubleyue.life/2022/06/21/python%E8%AF%BB%E5%8F%96txt/"/>
+    <id>https://doubleyue.life/2022/06/21/python%E8%AF%BB%E5%8F%96txt/</id>
+    <published>2022-06-21T06:09:57.000Z</published>
+    <updated>2022-07-11T10:43:33.229Z</updated>
+    
+    <content type="html"><![CDATA[<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> ospath <span class="token operator">=</span> <span class="token string">'aaa.txt'</span><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> <span class="token string">'r'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>  aaa <span class="token operator">=</span> f<span class="token punctuation">.</span>readlines<span class="token punctuation">(</span><span class="token punctuation">)</span>  f<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;pre class=&quot;line-numbers language-python&quot; data-language=&quot;python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; os
+</summary>
+      
+    
+    
+    
+    <category term="知识积累" scheme="https://doubleyue.life/categories/%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
+    
+    
+    <category term="python" scheme="https://doubleyue.life/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>ubuntu遇到Sub-process /usr/bin/dpkg returned an error code (1)的解决</title>
